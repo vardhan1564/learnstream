@@ -169,7 +169,7 @@ and add the frontend URL to `CORS_ORIGINS`.
 
 ## License
 
-All rights reserved. Contact the author for usage permissions.
+All rights reserved. Contact the author for usage permissions or Reach out at vardhanadheli1527@gmail.com.
 
 <div align="center">
 <br />
