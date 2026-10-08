@@ -1,0 +1,19 @@
+# Secrets - never upload
+secrets.properties
+.env
+.env.local
+
+# Build output and downloads
+node_modules/
+dist/
+target/
+uploads/
+
+# Editor files
+.settings/
+.classpath
+.project
+.factorypath
+.idea/
+*.iml
+.vscode/

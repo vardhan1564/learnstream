@@ -1,0 +1,9 @@
+target
+uploads
+secrets.properties
+.settings
+.classpath
+.project
+.factorypath
+.idea
+*.iml

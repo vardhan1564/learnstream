@@ -1,0 +1,61 @@
+/* App shell, footer, auth screens and shared cards */
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.app-main { flex: 1; }
+
+.footer { background: var(--surface); border-top: 1px solid var(--line); padding: 28px 0; }
+.footer-inner { display: flex; align-items: center; gap: 24px 40px; flex-wrap: wrap; }
+.footer-brand { display: flex; align-items: center; gap: 12px; }
+.footer-brand img { width: 44px; height: auto; }
+.footer-brand strong { display: block; font-family: var(--font-display); font-size: 1.05rem; }
+.footer-brand span { color: var(--muted); font-size: 0.85rem; }
+.footer-links { display: flex; gap: 20px; flex-wrap: wrap; flex: 1; }
+.footer-links a { color: var(--ink-2); font-weight: 600; font-size: 0.92rem; }
+.footer-copy { margin: 0; color: var(--muted); font-size: 0.85rem; }
+
+.link-btn { border: 0; background: none; padding: 0; color: var(--blue); font: inherit; font-weight: 700; cursor: pointer; }
+.link-btn:disabled { color: var(--muted); cursor: default; }
+.link-btn:hover:not(:disabled) { text-decoration: underline; }
+
+/* ---------- Auth ---------- */
+.auth { display: grid; grid-template-columns: minmax(320px, 0.9fr) 1.1fr; min-height: calc(100vh - var(--nav-h)); }
+.auth-side { background: var(--blue-deep); color: #fff; padding: 56px 48px; display: flex; flex-direction: column; justify-content: center; gap: 28px; position: relative; overflow: hidden; }
+.auth-side::after { content: ''; position: absolute; right: -120px; bottom: -160px; width: 420px; height: 420px; border-radius: 50%; border: 40px solid rgba(18,160,214,.18); }
+.auth-mark { width: 120px; background: #fff; border-radius: var(--r-md); padding: 10px; }
+.auth-quote { font: 600 1.45rem/1.35 var(--font-display); max-width: 26ch; margin: 0; }
+.auth-points { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; color: #c9d7f2; }
+.auth-points li { padding-left: 22px; position: relative; }
+.auth-points li::before { content: ''; position: absolute; left: 0; top: 0.5em; width: 10px; height: 10px; border-radius: 50%; background: var(--cyan); }
+.auth-main { display: grid; place-items: center; padding: 40px 20px; }
+.auth-card { width: 100%; max-width: 420px; }
+.auth-card h1 { font-size: 2rem; margin-bottom: 6px; }
+.auth-card > p.muted { margin-bottom: 24px; }
+.auth-back { display: none; font: 800 1.2rem var(--font-display); margin-bottom: 20px; }
+.auth-footer { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); text-align: center; color: var(--ink-2); }
+@media (max-width: 860px) {
+  .auth { grid-template-columns: 1fr; }
+  .auth-side { display: none; }
+}
+
+/* ---------- Course card (catalog) ---------- */
+.course-card { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; color: var(--ink); text-decoration: none !important; transition: border-color .15s, transform .15s; }
+.course-card:hover { border-color: var(--blue); }
+.course-card:hover h3 { color: var(--blue); }
+.course-art { position: relative; aspect-ratio: 2 / 1; background: #dfe7f3; overflow: hidden; }
+.course-art img { width: 100%; height: 100%; object-fit: cover; }
+.course-art.generated svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.course-art.generated span { position: absolute; left: 20px; bottom: 16px; color: #fff; font: 800 1.7rem/1 var(--font-display); letter-spacing: -0.02em; text-shadow: 0 2px 12px rgba(0,0,0,.18); }
+.course-card-body { padding: 16px 18px 18px; display: flex; flex-direction: column; flex: 1; }
+.course-card-tags { gap: 6px; min-height: 24px; margin-bottom: 8px; }
+.course-card h3 { font-size: 1.12rem; margin: 0 0 4px; transition: color .15s; }
+.course-card-by { margin: 0 0 14px; }
+.course-card-foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-top: 12px; border-top: 1px solid var(--line); }
+.course-card-meta { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); font-size: 0.85rem; }
+.course-card-meta svg:not(:first-child) { margin-left: 8px; }
+.price { font: 800 1.08rem var(--font-display); color: var(--ink); }
+.price.free { color: var(--green); }
+
+/* ---------- Toolbar ---------- */
+.toolbar { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 24px; }
+.toolbar-search { flex: 1 1 260px; }
+.toolbar-select { width: auto; min-width: 180px; }
+
