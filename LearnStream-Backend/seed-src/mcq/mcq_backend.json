@@ -1,0 +1,1658 @@
+[
+  {
+    "title": "Java MCQs - Part 1: Fundamentals",
+    "description": "Warm up with Java basics: primitive types, operators, strings, OOP, access modifiers, exceptions and core collections.",
+    "category": "Java",
+    "questions": [
+      {
+        "q": "Which Java primitive type is a 64-bit signed integer?",
+        "options": [
+          "long",
+          "int",
+          "short",
+          "double"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "What is the output?\n\nint x = 5;\nSystem.out.println(x++ + ++x);",
+        "options": [
+          "12",
+          "11",
+          "10",
+          "13"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "What is the default value of an int instance field that is never explicitly initialized?",
+        "options": [
+          "0",
+          "null",
+          "-1",
+          "It causes a compile error when read"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "What is the output?\n\nString s = \"hello\";\ns.toUpperCase();\nSystem.out.println(s);",
+        "options": [
+          "HELLO",
+          "Hello",
+          "hello",
+          "null"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is the output?\n\nString a = new String(\"hi\");\nString b = \"hi\";\nSystem.out.println(a == b);\nSystem.out.println(a.equals(b));",
+        "options": [
+          "true, then true",
+          "false, then true",
+          "false, then false",
+          "true, then false"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "Which keyword prevents a class from being subclassed?",
+        "options": [
+          "static",
+          "final",
+          "abstract",
+          "private"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "A field or method of a class is declared with no access modifier. Where is it accessible?",
+        "options": [
+          "From any class anywhere",
+          "Only from within the same class",
+          "Only from classes in the same package",
+          "From the same package and from subclasses in any package"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "Which of these is a checked exception?",
+        "options": [
+          "NullPointerException",
+          "java.io.IOException",
+          "ArithmeticException",
+          "ArrayIndexOutOfBoundsException"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What is the output?\n\nSystem.out.println(10 / 3 + \" \" + 10 % 3 + \" \" + 10 / 3.0);",
+        "options": [
+          "3.33 1 3.33",
+          "3 1 3.3333333333333335",
+          "3 1 3",
+          "3 0 3.3333333333333335"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "Which of the following can a Java interface NOT declare?",
+        "options": [
+          "default methods",
+          "static methods",
+          "Instance (non-static) fields",
+          "private methods"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "When is the specific overloaded method to call chosen?",
+        "options": [
+          "At runtime, based on the actual object types of the arguments",
+          "When the class is loaded by the JVM",
+          "Randomly, if more than one overload matches",
+          "At compile time, based on the declared argument types"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What is the output?\n\nclass A { void show() { System.out.println(\"A\"); } }\nclass B extends A { void show() { System.out.println(\"B\"); } }\n\nA obj = new B();\nobj.show();",
+        "options": [
+          "A",
+          "A then B",
+          "B",
+          "Compile error: A has no method show() for type B"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "Which statement about abstract classes is true?",
+        "options": [
+          "An abstract class can have constructors",
+          "An abstract class can be instantiated directly with new",
+          "Every method in an abstract class must be abstract",
+          "An abstract class cannot declare fields"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Which collection type does NOT allow duplicate elements?",
+        "options": [
+          "List",
+          "Deque",
+          "Vector",
+          "Set"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What is the output?\n\nList<Integer> list = new ArrayList<>(List.of(1, 2, 3));\nlist.remove(1);\nSystem.out.println(list);",
+        "options": [
+          "[2, 3]",
+          "[1, 2]",
+          "UnsupportedOperationException is thrown",
+          "[1, 3]"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What does it mean for a method to be declared static?",
+        "options": [
+          "It can be called only once during the program's lifetime",
+          "It cannot be overloaded",
+          "It belongs to the class and can be called without creating an instance",
+          "It can read instance fields directly without an object reference"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is the output?\n\nString s = null;\nSystem.out.println(s + \"x\");",
+        "options": [
+          "x",
+          "A NullPointerException is thrown",
+          "Compile error",
+          "nullx"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "Which statement about a final reference variable is correct?",
+        "options": [
+          "It cannot be reassigned, but the object it refers to can still be modified",
+          "The object it refers to automatically becomes immutable",
+          "It must always be initialized on the same line it is declared",
+          "It cannot be used inside a lambda expression"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "What is the output?\n\nchar c = 'A';\nc += 2;\nSystem.out.println(c);",
+        "options": [
+          "67",
+          "A2",
+          "Compile error: possible lossy conversion",
+          "C"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What happens?\n\nint[] arr = new int[3];\nSystem.out.println(arr[3]);",
+        "options": [
+          "It prints 0",
+          "An ArrayIndexOutOfBoundsException is thrown at runtime",
+          "It prints null",
+          "Compile error"
+        ],
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "title": "Java MCQs - Part 2: Advanced",
+    "description": "Interview-level Java: HashMap internals, the String pool, streams, Optional, records, generics, concurrency and the JVM.",
+    "category": "Java",
+    "questions": [
+      {
+        "q": "Which rule is part of the equals()/hashCode() contract?",
+        "options": [
+          "If a.equals(b) is true, then a.hashCode() must equal b.hashCode()",
+          "If a.hashCode() == b.hashCode(), then a.equals(b) must be true",
+          "hashCode() must return a unique value for every distinct object",
+          "The compiler rejects classes that override equals() without hashCode()"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "In Java 8+ HashMap, what happens when a single bucket accumulates many colliding entries (and the table is large enough)?",
+        "options": [
+          "The bucket is converted into a sorted array",
+          "The bucket's linked list is converted into a balanced (red-black) tree",
+          "The whole map is converted into a LinkedHashMap",
+          "New colliding entries are silently dropped"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What is the output?\n\nstatic int f() {\n    try {\n        return 1;\n    } finally {\n        return 2;\n    }\n}\n\nSystem.out.println(f());",
+        "options": [
+          "1",
+          "2",
+          "Compile error: unreachable code",
+          "1 then 2"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What is the output?\n\nString a = \"java\";\nString b = \"ja\" + \"va\";\nString c = \"ja\";\nString d = c + \"va\";\nSystem.out.println((a == b) + \" \" + (a == d));",
+        "options": [
+          "true true",
+          "false false",
+          "false true",
+          "true false"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What is the output?\n\nint r = Stream.of(1, 2, 3, 4, 5)\n    .filter(n -> n % 2 == 1)\n    .map(n -> n * n)\n    .reduce(0, Integer::sum);\nSystem.out.println(r);",
+        "options": [
+          "35",
+          "55",
+          "15",
+          "20"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "What is printed?\n\nStream.of(\"a\", \"b\", \"c\")\n    .peek(System.out::print)\n    .map(String::toUpperCase);",
+        "options": [
+          "Nothing - no terminal operation is invoked, so the pipeline never runs",
+          "abc",
+          "ABC",
+          "aAbBcC"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "What is the output?\n\nOptional<String> name = Optional.empty();\nSystem.out.println(name.map(String::length).orElse(-1));",
+        "options": [
+          "0",
+          "null",
+          "A NoSuchElementException is thrown",
+          "-1"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What happens when Optional.of(null) is called?",
+        "options": [
+          "A NullPointerException is thrown",
+          "It returns Optional.empty()",
+          "It returns an Optional that contains null",
+          "A NoSuchElementException is thrown"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Which statement about Java records is true?",
+        "options": [
+          "A record can extend another class",
+          "Records generate setter methods for each component",
+          "A record cannot implement interfaces",
+          "A record is implicitly final and its component fields are private and final"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "Which statement about generics and type erasure is true?",
+        "options": [
+          "You can check obj instanceof List<String> at runtime",
+          "Primitive types such as int can be used as type arguments",
+          "At runtime, List<String> and List<Integer> share the same Class object",
+          "Each parameterization like List<String> gets its own .class file"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "Given List<? extends Number> nums, which call compiles?",
+        "options": [
+          "nums.add(1);",
+          "nums.add(1.0);",
+          "nums.add(null);",
+          "nums.add(Integer.valueOf(1));"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is the output with default JVM settings?\n\nInteger a = 127, b = 127;\nInteger c = 128, d = 128;\nSystem.out.println((a == b) + \" \" + (c == d));",
+        "options": [
+          "true true",
+          "true false",
+          "false false",
+          "false true"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "Which statement about the volatile keyword is correct?",
+        "options": [
+          "It makes compound operations like count++ atomic",
+          "It acquires a monitor lock every time the field is read",
+          "It prevents the field from being changed after construction",
+          "It guarantees visibility of writes across threads but does not make count++ atomic"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What happens if you call t.run() instead of t.start() on a Thread object?",
+        "options": [
+          "A new thread is started, exactly as with start()",
+          "An IllegalThreadStateException is always thrown",
+          "Nothing happens; run() is a no-op",
+          "run() executes synchronously in the calling thread; no new thread is started"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What happens?\n\nList<Integer> list = new ArrayList<>(List.of(1, 2, 3));\nfor (Integer i : list) {\n    if (i == 1) list.remove(i);\n}\nSystem.out.println(list);",
+        "options": [
+          "[2, 3]",
+          "[1, 3]",
+          "A ConcurrentModificationException is thrown",
+          "[1, 2, 3]"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "In Java 8 and later, which JVM memory area holds class metadata?",
+        "options": [
+          "PermGen",
+          "Metaspace",
+          "The young generation of the heap",
+          "Each thread's stack"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "When does an object become eligible for garbage collection?",
+        "options": [
+          "When it is no longer reachable from any GC root (live thread stacks, static fields, etc.)",
+          "As soon as System.gc() is called",
+          "As soon as any one reference to it is set to null",
+          "Only after its finalize() method has been called explicitly"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Which of these is NOT a functional interface?",
+        "options": [
+          "java.lang.Runnable",
+          "java.util.Comparator",
+          "java.util.List",
+          "java.util.function.Supplier"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is the output?\n\nclass P {\n    static { System.out.print(\"S\"); }\n    { System.out.print(\"I\"); }\n    P() { System.out.print(\"C\"); }\n}\n\nnew P();\nnew P();",
+        "options": [
+          "SICSIC",
+          "ICSIC",
+          "SICIC",
+          "SCISCI"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is the output?\n\nclass A { static String name() { return \"A\"; } }\nclass B extends A { static String name() { return \"B\"; } }\n\nA obj = new B();\nSystem.out.println(obj.name());",
+        "options": [
+          "B",
+          "A",
+          "AB",
+          "Compile error: static methods cannot be redeclared"
+        ],
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "title": "Python MCQs - Part 1: Fundamentals",
+    "description": "Test your Python basics: types, slicing, comprehensions, dicts and sets, functions, exceptions and f-strings.",
+    "category": "Python",
+    "questions": [
+      {
+        "q": "What is the output?\n\nprint(type(3 / 2), 7 // 2)",
+        "options": [
+          "<class 'float'> 3",
+          "<class 'int'> 3",
+          "<class 'float'> 3.5",
+          "<class 'int'> 1"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Which built-in type is immutable?",
+        "options": [
+          "list",
+          "dict",
+          "set",
+          "tuple"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What is the output?\n\ns = \"Python\"\nprint(s[1:4], s[-2:])",
+        "options": [
+          "Pyt on",
+          "yth on",
+          "yth hon",
+          "ytho on"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What is the output?\n\nnums = [0, 1, 2, 3, 4, 5]\nprint(nums[::2], nums[::-2])",
+        "options": [
+          "[0, 2, 4] [4, 2, 0]",
+          "[1, 3, 5] [5, 3, 1]",
+          "[0, 2, 4] [5, 3, 1]",
+          "[0, 2, 4] [1, 3, 5]"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is the output?\n\nprint([x * x for x in range(5) if x % 2 == 0])",
+        "options": [
+          "[0, 4, 16]",
+          "[4, 16]",
+          "[0, 4, 16, 36]",
+          "[1, 9]"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "What is the output?\n\nd = {\"a\": 1}\nprint(d.get(\"b\", 0), \"b\" in d)",
+        "options": [
+          "0 False",
+          "None False",
+          "0 True",
+          "A KeyError is raised"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Which expression creates an empty set?",
+        "options": [
+          "{}",
+          "[]",
+          "set()",
+          "()"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is the output?\n\ndef f(*args, **kwargs):\n    print(args, kwargs)\n\nf(1, 2, x=3)",
+        "options": [
+          "[1, 2] {'x': 3}",
+          "(1, 2, 3) {}",
+          "(1, 2) {'x': 3}",
+          "(1, 2) ('x', 3)"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is the output?\n\ndef add(item, bucket=[]):\n    bucket.append(item)\n    return bucket\n\nadd(1)\nprint(add(2))",
+        "options": [
+          "[2]",
+          "[1, 2]",
+          "[1]",
+          "A TypeError is raised"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What is the output?\n\na = [1, 2]\nb = [1, 2]\nprint(a == b, a is b)",
+        "options": [
+          "True True",
+          "False False",
+          "False True",
+          "True False"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What happens?\n\ns = \"cat\"\ns[0] = \"b\"",
+        "options": [
+          "s becomes \"bat\"",
+          "A TypeError is raised because strings are immutable",
+          "An IndexError is raised",
+          "A new string \"bat\" is created and bound to s"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "Which of these values is truthy?",
+        "options": [
+          "0.0",
+          "''",
+          "[0]",
+          "{}"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is the output?\n\nprice = 3.14159\nprint(f\"{price:.2f}\")",
+        "options": [
+          "3.141",
+          "3.14159",
+          "3.14",
+          "{price:.2f}"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is the output?\n\ntry:\n    print(\"T\", end=\"\")\nexcept ValueError:\n    print(\"E\", end=\"\")\nelse:\n    print(\"L\", end=\"\")\nfinally:\n    print(\"F\", end=\"\")",
+        "options": [
+          "TF",
+          "TLF",
+          "TEF",
+          "TELF"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "Which expression creates a tuple containing exactly one element, the number 5?",
+        "options": [
+          "(5)",
+          "[5]",
+          "tuple(5)",
+          "(5,)"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What does a Python function return if it finishes without a return statement?",
+        "options": [
+          "0",
+          "False",
+          "It raises a RuntimeError",
+          "None"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What is the output?\n\nx = 10\n\ndef f():\n    x = 20\n\nf()\nprint(x)",
+        "options": [
+          "10",
+          "20",
+          "None",
+          "An UnboundLocalError is raised"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "What does list.sort() return?",
+        "options": [
+          "A new sorted list, leaving the original unchanged",
+          "The original list object after sorting",
+          "True if any elements were moved",
+          "None - it sorts the list in place"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "Which keyword defines a small anonymous function?",
+        "options": [
+          "def",
+          "lambda",
+          "func",
+          "anon"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What is the output?\n\nprint(list(zip([1, 2, 3], \"ab\")))",
+        "options": [
+          "[(1, 'a'), (2, 'b')]",
+          "[(1, 'a'), (2, 'b'), (3, None)]",
+          "[(1, 'a'), (2, 'b'), (3, '')]",
+          "A ValueError is raised because the lengths differ"
+        ],
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "title": "Python MCQs - Part 2: Advanced",
+    "description": "Go deeper into Python: scope and closures, decorators, generators, MRO, dunder methods, context managers and the GIL.",
+    "category": "Python",
+    "questions": [
+      {
+        "q": "In Python's LEGB name-resolution rule, what does LEGB stand for?",
+        "options": [
+          "Local, External, Global, Base",
+          "Local, Enclosing, Global, Built-in",
+          "Lambda, Enclosing, Global, Built-in",
+          "Local, Enclosing, Generic, Built-in"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What is the output?\n\ndef outer():\n    count = 0\n    def inc():\n        nonlocal count\n        count += 1\n        return count\n    inc()\n    return inc()\n\nprint(outer())",
+        "options": [
+          "1",
+          "0",
+          "2",
+          "An UnboundLocalError is raised"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What happens when f() is called?\n\nx = 5\n\ndef f():\n    print(x)\n    x = 10\n\nf()",
+        "options": [
+          "It prints 5",
+          "An UnboundLocalError is raised",
+          "It prints 10",
+          "It prints None"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What is the output?\n\nfuncs = [lambda: i for i in range(3)]\nprint([f() for f in funcs])",
+        "options": [
+          "[0, 1, 2]",
+          "[0, 0, 0]",
+          "[2, 2, 2]",
+          "A NameError is raised"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is the output?\n\ndef deco(fn):\n    def wrapper(*a):\n        return fn(*a) * 2\n    return wrapper\n\n@deco\ndef add(x, y):\n    return x + y\n\nprint(add(2, 3))",
+        "options": [
+          "5",
+          "7",
+          "10",
+          "A TypeError is raised"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is the main purpose of functools.wraps inside a decorator?",
+        "options": [
+          "It caches the wrapped function's results",
+          "It lets the decorator accept arguments",
+          "It makes the wrapped function thread-safe",
+          "It copies metadata such as __name__ and __doc__ from the wrapped function onto the wrapper"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What is the output?\n\ndef gen():\n    yield 1\n    yield 2\n\ng = gen()\nprint(next(g), next(g), next(g, \"done\"))",
+        "options": [
+          "1 2 done",
+          "1 2 None",
+          "1 1 done",
+          "A StopIteration is raised"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "What is the main advantage of (x * x for x in data) over [x * x for x in data]?",
+        "options": [
+          "It produces items lazily, so it uses far less memory for large inputs",
+          "It can be iterated over any number of times",
+          "It supports indexing like result[3]",
+          "It is always faster, even for tiny inputs"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Which two methods make an object an iterator under Python's iterator protocol?",
+        "options": [
+          "__next__ and __len__",
+          "__iter__ and __next__",
+          "__iter__ and __len__",
+          "__getitem__ and __contains__"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What is the output?\n\nclass A:\n    def who(self): return \"A\"\nclass B(A):\n    def who(self): return \"B\"\nclass C(A):\n    def who(self): return \"C\"\nclass D(B, C):\n    pass\n\nprint(D().who(), [k.__name__ for k in D.__mro__])",
+        "options": [
+          "B ['D', 'B', 'A', 'C', 'object']",
+          "B ['D', 'B', 'C', 'A', 'object']",
+          "C ['D', 'C', 'B', 'A', 'object']",
+          "A TypeError is raised: inconsistent MRO"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "A class defines __eq__ but not __hash__. What happens when you add an instance to a set?",
+        "options": [
+          "A TypeError is raised because the instance is unhashable",
+          "It works, using the default identity-based hash",
+          "Python derives __hash__ automatically from __eq__",
+          "It works, but the set may contain equal duplicates"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "What is the output?\n\nclass P:\n    def __repr__(self):\n        return \"R\"\n\nprint(P(), str(P()))",
+        "options": [
+          "<__main__.P object> R",
+          "R <__main__.P object>",
+          "R R",
+          "An AttributeError is raised because __str__ is missing"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "In a context manager, what happens if __exit__ returns True after an exception occurred inside the with block?",
+        "options": [
+          "The exception is re-raised as usual",
+          "The exception is converted into a RuntimeError",
+          "The with block is executed again",
+          "The exception is suppressed and execution continues after the with block"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "Which statement about the Global Interpreter Lock (GIL) in standard CPython 3.11 is true?",
+        "options": [
+          "Only one thread executes Python bytecode at a time, so CPU-bound threads don't run in parallel",
+          "It prevents I/O-bound threads from overlapping their waiting time",
+          "It makes every operation on shared objects thread-safe, so locks are never needed",
+          "It also limits processes created with the multiprocessing module"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "For CPU-bound work in standard CPython, which approach achieves true parallelism across cores?",
+        "options": [
+          "multiprocessing (e.g., ProcessPoolExecutor)",
+          "threading.Thread",
+          "asyncio tasks",
+          "ThreadPoolExecutor"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "What is the output?\n\nimport copy\na = [[1, 2], [3]]\nb = copy.copy(a)\nb[0].append(9)\nb.append([4])\nprint(a)",
+        "options": [
+          "[[1, 2], [3]]",
+          "[[1, 2, 9], [3], [4]]",
+          "[[1, 2, 9], [3]]",
+          "[[1, 2], [3], [4]]"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "Which statement about dict in Python 3.7+ is true?",
+        "options": [
+          "Keys are always kept in sorted order",
+          "Lists can be used as keys",
+          "Duplicate keys are stored as separate entries",
+          "Insertion order of keys is guaranteed to be preserved"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What is the output?\n\ntry:\n    int(\"x\")\nexcept Exception:\n    print(\"E\")\nexcept ValueError:\n    print(\"V\")",
+        "options": [
+          "V",
+          "E then V",
+          "A SyntaxError, because the broader handler comes first",
+          "E"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What does the if __name__ == \"__main__\": guard do?",
+        "options": [
+          "Its block runs only when the module is imported",
+          "Its block runs only when the file is executed directly, not when it is imported as a module",
+          "It marks the module's main function for the compiler",
+          "It prevents other modules from importing the file"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What is the output?\n\nclass Dog:\n    tricks = []\n\na, b = Dog(), Dog()\na.tricks.append(\"sit\")\nprint(b.tricks)",
+        "options": [
+          "[]",
+          "An AttributeError is raised",
+          "None",
+          "['sit']"
+        ],
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "title": "SQL MCQs - Part 1: Fundamentals",
+    "description": "Check your grip on core SQL: filtering, sorting, joins, grouping, NULL handling, keys and basic DDL.",
+    "category": "SQL",
+    "questions": [
+      {
+        "q": "Which clause filters individual rows before any grouping happens?",
+        "options": [
+          "HAVING",
+          "ORDER BY",
+          "GROUP BY",
+          "WHERE"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What is the logical processing order of a SELECT query's clauses?",
+        "options": [
+          "FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY",
+          "SELECT -> FROM -> WHERE -> GROUP BY -> HAVING -> ORDER BY",
+          "FROM -> GROUP BY -> WHERE -> HAVING -> SELECT -> ORDER BY",
+          "FROM -> WHERE -> SELECT -> GROUP BY -> ORDER BY -> HAVING"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Table t has a column x with values 1, NULL, 3, NULL. What does this return?\n\nSELECT COUNT(*), COUNT(x) FROM t;",
+        "options": [
+          "4, 4",
+          "2, 2",
+          "2, 4",
+          "4, 2"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "Why does SELECT * FROM t WHERE x = NULL return no rows, even if x has NULLs?",
+        "options": [
+          "NULL rows are always hidden by SELECT *",
+          "= NULL is a syntax error in every database",
+          "NULLs are stored as empty strings, so they don't match",
+          "Comparing with = NULL yields UNKNOWN, never TRUE; you must use IS NULL"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "Column score holds 10, 20 and NULL. What does SELECT AVG(score) return?",
+        "options": [
+          "10",
+          "15",
+          "NULL",
+          "30"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What does an INNER JOIN return?",
+        "options": [
+          "Only the rows that have matching values in both tables",
+          "All rows from the left table, plus matches from the right",
+          "Every combination of rows from both tables",
+          "All rows from both tables, matched where possible"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "customers: Ana, Ben, Cy. orders: two for Ana, one for Ben, none for Cy. How many rows does this return?\n\nSELECT c.name, o.id\nFROM customers c\nLEFT JOIN orders o ON o.customer_id = c.id;",
+        "options": [
+          "3",
+          "4",
+          "2",
+          "6"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "Which statement about a PRIMARY KEY is true?",
+        "options": [
+          "A table can have several separate primary keys",
+          "It may contain one NULL value",
+          "Its values must be unique and cannot be NULL",
+          "It must be an integer column"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is the main purpose of a FOREIGN KEY constraint?",
+        "options": [
+          "To speed up every query on the table automatically",
+          "To guarantee the column's values are unique",
+          "To enforce referential integrity: values must match an existing key in the referenced table",
+          "To encrypt the column's data"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "If ORDER BY is given without ASC or DESC, how are rows sorted?",
+        "options": [
+          "Ascending",
+          "Descending",
+          "In insertion order",
+          "In random order"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Which value matches the condition name LIKE 'J_n%'?",
+        "options": [
+          "John",
+          "Janet",
+          "Jn",
+          "Joan"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "sales(region, amount) has rows ('N',10), ('N',20), ('S',5), ('S',5), ('E',100). What does this return?\n\nSELECT region, SUM(amount)\nFROM sales\nGROUP BY region\nHAVING SUM(amount) > 10\nORDER BY region;",
+        "options": [
+          "(N, 30), (E, 100)",
+          "(E, 100), (N, 30), (S, 10)",
+          "(E, 100), (N, 30)",
+          "(N, 20), (E, 100)"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is the main difference between UNION and UNION ALL?",
+        "options": [
+          "UNION ALL removes duplicates; UNION keeps them",
+          "UNION requires the same number of columns; UNION ALL does not",
+          "UNION removes duplicate rows from the combined result; UNION ALL keeps them",
+          "UNION ALL can only combine two queries"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "Which command removes a table's data AND its structure (definition) from the database?",
+        "options": [
+          "DELETE FROM",
+          "TRUNCATE TABLE",
+          "ALTER TABLE ... DROP COLUMN",
+          "DROP TABLE"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What does this return when no rows match?\n\nSELECT SUM(x) FROM t WHERE 1 = 0;",
+        "options": [
+          "One row containing NULL",
+          "One row containing 0",
+          "No rows at all",
+          "An error"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Which rows does WHERE age BETWEEN 18 AND 30 include?",
+        "options": [
+          "Ages 19 to 29 only",
+          "Ages 18 to 29 only",
+          "Ages from 18 to 30, including both 18 and 30",
+          "Ages 19 to 30 only"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "A column phone_numbers stores values like '555-1234, 555-9876'. Which normal form does this most directly violate?",
+        "options": [
+          "First normal form (1NF)",
+          "Second normal form (2NF)",
+          "Third normal form (3NF)",
+          "Boyce-Codd normal form (BCNF)"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Which statement adds a new column to an existing table?",
+        "options": [
+          "UPDATE users ADD email VARCHAR(255);",
+          "ALTER TABLE users ADD email VARCHAR(255);",
+          "INSERT INTO users COLUMN email VARCHAR(255);",
+          "MODIFY TABLE users NEW email VARCHAR(255);"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "Table a has 4 rows and table b has 3 rows. How many rows does SELECT * FROM a CROSS JOIN b return?",
+        "options": [
+          "7",
+          "4",
+          "3",
+          "12"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "employees(id, name, manager_id) stores each employee's manager as another employee. How do you list each employee with their manager's name?",
+        "options": [
+          "A CROSS JOIN of employees with itself and no condition",
+          "A self join: FROM employees e JOIN employees m ON e.manager_id = m.id",
+          "UNION employees with itself",
+          "GROUP BY manager_id and select name"
+        ],
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "title": "SQL MCQs - Part 2: Advanced",
+    "description": "Interview-style SQL: window functions, CTEs, subqueries, transactions and isolation levels, indexing and normalization.",
+    "category": "SQL",
+    "questions": [
+      {
+        "q": "Scores 100, 90, 90, 80 are ranked with ORDER BY score DESC. What are RANK() and DENSE_RANK() for the score 80?",
+        "options": [
+          "RANK = 3, DENSE_RANK = 4",
+          "RANK = 3, DENSE_RANK = 3",
+          "RANK = 4, DENSE_RANK = 4",
+          "RANK = 4, DENSE_RANK = 3"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What is the key difference between an aggregate with GROUP BY and the same aggregate used as a window function (OVER)?",
+        "options": [
+          "Window functions collapse each group into a single row",
+          "Window functions cannot use PARTITION BY",
+          "Window functions can only be used in the WHERE clause",
+          "A window function computes over related rows but keeps every individual row in the result"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "t(id, amount) has rows (1, 10), (2, 20), (3, 30). What does this return?\n\nSELECT id, SUM(amount) OVER (ORDER BY id) AS running\nFROM t ORDER BY id;",
+        "options": [
+          "running = 60, 60, 60",
+          "running = 10, 20, 30",
+          "running = 10, 30, 60",
+          "running = 60, 50, 30"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What does this query return?\n\nWITH RECURSIVE n(x) AS (\n  SELECT 1\n  UNION ALL\n  SELECT x + 1 FROM n WHERE x < 5\n)\nSELECT SUM(x) FROM n;",
+        "options": [
+          "15",
+          "5",
+          "10",
+          "It never terminates"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Table a has ids 1, 2, 3. Table b has ids 1 and NULL. What does this return?\n\nSELECT COUNT(*) FROM a\nWHERE id NOT IN (SELECT id FROM b);",
+        "options": [
+          "0",
+          "2",
+          "1",
+          "3"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "When does EXISTS (subquery) evaluate to TRUE?",
+        "options": [
+          "When the subquery returns exactly one row",
+          "When every value returned by the subquery is non-NULL",
+          "When the subquery's first column equals the outer column",
+          "When the subquery returns at least one row"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What makes a subquery correlated?",
+        "options": [
+          "It appears in the FROM clause",
+          "It returns more than one column",
+          "It references columns of the outer query, so it is logically evaluated once per outer row",
+          "It is joined with a UNION"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "Which ACID property guarantees that a committed transaction survives a crash or power loss?",
+        "options": [
+          "Durability",
+          "Atomicity",
+          "Consistency",
+          "Isolation"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Per the SQL standard, what is the lowest isolation level that prevents dirty reads?",
+        "options": [
+          "READ UNCOMMITTED",
+          "REPEATABLE READ",
+          "READ COMMITTED",
+          "SERIALIZABLE"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "Per the SQL standard's definitions, which isolation level is the only one that prevents phantom reads?",
+        "options": [
+          "READ COMMITTED",
+          "SERIALIZABLE",
+          "REPEATABLE READ",
+          "READ UNCOMMITTED"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What is a typical downside of adding many indexes to a table?",
+        "options": [
+          "SELECT queries always become slower",
+          "The table can no longer have a primary key",
+          "Rows can no longer contain NULLs",
+          "INSERT/UPDATE/DELETE get slower and more storage is used, since every index must be maintained"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "A B-tree index exists on (last_name, first_name). Which WHERE clause can use it most directly, via the leftmost-prefix rule?",
+        "options": [
+          "WHERE first_name = 'Ana'",
+          "WHERE UPPER(last_name) = 'LEE'",
+          "WHERE last_name = 'Lee'",
+          "WHERE first_name LIKE '%na'"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "In MySQL's InnoDB engine, what is the clustered index of a table that has a primary key?",
+        "options": [
+          "The most recently created secondary index",
+          "A hidden index on every column",
+          "The primary key - the table rows themselves are stored in primary-key order",
+          "There is none; InnoDB never clusters data"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "Which statement about TRUNCATE compared to DELETE is true?",
+        "options": [
+          "TRUNCATE removes all rows at once and cannot take a WHERE clause",
+          "TRUNCATE can delete only the rows matching a WHERE condition",
+          "TRUNCATE also removes the table's definition",
+          "DELETE without a WHERE clause drops the table"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "orders(order_id PK, customer_id, customer_city): customer_city depends on customer_id, not directly on order_id. Which normal form is violated?",
+        "options": [
+          "First normal form (1NF)",
+          "Third normal form (3NF)",
+          "Second normal form (2NF)",
+          "None; the table is fully normalized"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "Which statement about a standard (non-materialized) view is true?",
+        "options": [
+          "It stores its own copy of the data",
+          "It stores a query; its rows are derived from the base tables each time it is queried",
+          "Querying it is always faster than querying the base tables",
+          "It cannot be used in a JOIN"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What effect does the WHERE clause have here?\n\nSELECT c.name\nFROM customers c\nLEFT JOIN orders o ON o.customer_id = c.id\nWHERE o.amount > 100;",
+        "options": [
+          "None; LEFT JOIN always keeps every customer",
+          "Customers without orders are removed (o.amount is NULL for them), so it behaves like an INNER JOIN",
+          "It returns only customers without orders",
+          "It is a syntax error to filter the right table of a LEFT JOIN"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "emp.salary contains 100, 200, 300, 300. What does this return?\n\nSELECT MAX(salary) FROM emp\nWHERE salary < (SELECT MAX(salary) FROM emp);",
+        "options": [
+          "300",
+          "200",
+          "100",
+          "NULL"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "Why is this query invalid in standard SQL (and in MySQL with ONLY_FULL_GROUP_BY, the default since 5.7)?\n\nSELECT dept, name, COUNT(*)\nFROM emp\nGROUP BY dept;",
+        "options": [
+          "name is neither in GROUP BY nor inside an aggregate function",
+          "COUNT(*) cannot be combined with GROUP BY",
+          "GROUP BY must list every table column",
+          "dept must appear in an ORDER BY clause"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "What does this return?\n\nSELECT COALESCE(NULL + 5, 0);",
+        "options": [
+          "5",
+          "NULL",
+          "An error",
+          "0"
+        ],
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "title": "REST API MCQs - Part 1: Fundamentals",
+    "description": "Learn the essentials of REST: HTTP methods, common status codes, resource naming, statelessness and key headers.",
+    "category": "REST API",
+    "questions": [
+      {
+        "q": "What does REST stand for?",
+        "options": [
+          "Remote Execution Service Transport",
+          "Resource State Transmission",
+          "Representational State Transfer",
+          "Reliable Endpoint Service Technology"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "Which HTTP method is normally used to create a new resource in a collection when the server assigns its ID?",
+        "options": [
+          "GET",
+          "POST",
+          "PUT",
+          "HEAD"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "POST /users\nContent-Type: application/json\n\n{\"name\": \"Ana\"}\n\nThe server creates user 17. What is the most appropriate response?",
+        "options": [
+          "200 OK with an empty body",
+          "204 No Content",
+          "201 Created with a Location: /users/17 header",
+          "302 Found redirecting to /users/17"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What does the status code 404 Not Found indicate?",
+        "options": [
+          "The client must authenticate first",
+          "The server crashed while handling the request",
+          "The request body was malformed",
+          "The server can't find a current representation for the requested resource"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "When is 204 No Content typically returned?",
+        "options": [
+          "When the requested resource does not exist",
+          "When a request succeeded and there is no response body to send, e.g. after a DELETE",
+          "When the client sent an empty request body",
+          "When the server is temporarily unavailable"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "Which HTTP method is defined as safe (read-only)?",
+        "options": [
+          "POST",
+          "PUT",
+          "GET",
+          "DELETE"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "Which HTTP method is NOT idempotent?",
+        "options": [
+          "POST",
+          "PUT",
+          "DELETE",
+          "GET"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Which endpoint best follows REST resource-naming conventions for listing a user's orders?",
+        "options": [
+          "GET /users/42/orders",
+          "GET /getUserOrders?id=42",
+          "POST /users/42/getOrders",
+          "GET /user_orders_list/42"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "What does statelessness mean in REST?",
+        "options": [
+          "Each request carries all the information needed to process it; the server keeps no client session state between requests",
+          "The server never stores any data in a database",
+          "Responses can never be cached",
+          "Clients may not keep any state either"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "A request to a protected endpoint has no credentials (or an invalid token). Which status code fits best?",
+        "options": [
+          "401 Unauthorized",
+          "403 Forbidden",
+          "400 Bad Request",
+          "404 Not Found"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "A logged-in user tries to delete another user's account but lacks permission. Which status code fits best?",
+        "options": [
+          "401 Unauthorized",
+          "405 Method Not Allowed",
+          "500 Internal Server Error",
+          "403 Forbidden"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "What does the Content-Type header in a request indicate?",
+        "options": [
+          "The media types the client accepts in the response",
+          "The type of authentication being used",
+          "The media type of the request body, e.g. application/json",
+          "The HTTP method being used"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What does the Accept request header do?",
+        "options": [
+          "It tells the server to accept the request without validation",
+          "It tells the server which response media types the client can handle (content negotiation)",
+          "It lists the HTTP methods the server supports",
+          "It carries the client's access token"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What does 500 Internal Server Error indicate?",
+        "options": [
+          "The client sent invalid JSON",
+          "The server hit an unexpected condition that prevented it from fulfilling the request",
+          "The client is not logged in",
+          "The resource was permanently moved"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "Which is the most RESTful way to request books sorted by price?",
+        "options": [
+          "GET /products/filter/books/sortByPrice/true",
+          "POST /getProducts with category=books in the body",
+          "DELETE /products?category!=books",
+          "GET /products?category=books&sort=price"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "Which statement about REST is true?",
+        "options": [
+          "REST is an architectural style; it doesn't mandate JSON, and a resource can have several representations",
+          "REST is a protocol standardized by the W3C",
+          "REST APIs must exchange XML documents",
+          "REST requires a persistent WebSocket connection"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "What does PUT /users/42 with a complete user representation in the body do?",
+        "options": [
+          "Appends a new user to the /users collection with a server-chosen ID",
+          "Updates only the fields that changed and ignores the rest",
+          "Replaces the state of the resource at /users/42 with the given representation (or creates it there)",
+          "Deletes user 42 and returns its old data"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "A client sends a body containing malformed JSON (a missing closing brace). Which status code fits best?",
+        "options": [
+          "404 Not Found",
+          "500 Internal Server Error",
+          "201 Created",
+          "400 Bad Request"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "In a 201 Created response, what does the Location header usually contain?",
+        "options": [
+          "The server's geographic region",
+          "The URI of the newly created resource",
+          "The URI of the API documentation",
+          "The client's IP address"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "Which HTTP method returns the same headers as GET but without a response body?",
+        "options": [
+          "OPTIONS",
+          "TRACE",
+          "CONNECT",
+          "HEAD"
+        ],
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "title": "REST API MCQs - Part 2: Advanced",
+    "description": "Level up on API design: PUT vs PATCH, idempotency, conditional requests and caching, versioning, pagination, CORS and auth.",
+    "category": "REST API",
+    "questions": [
+      {
+        "q": "How does PATCH differ from PUT?",
+        "options": [
+          "PATCH creates resources; PUT only deletes them",
+          "PATCH is always idempotent; PUT never is",
+          "PATCH applies a partial modification; PUT replaces the target resource's entire state",
+          "PATCH must send the full resource; PUT sends only changes"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "A client sends DELETE /items/5 twice. The first returns 204, the second 404. Is DELETE still idempotent?",
+        "options": [
+          "No - different status codes prove it is not idempotent",
+          "Only if the server returned 204 both times",
+          "No - DELETE is defined as non-idempotent",
+          "Yes - idempotency concerns the effect on server state, not identical responses"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "A client sends GET /report with If-None-Match: \"abc123\", and the resource's current ETag is still \"abc123\". What should the server return?",
+        "options": [
+          "200 OK with the full body",
+          "412 Precondition Failed",
+          "204 No Content",
+          "304 Not Modified with no body"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "A client sends PUT /docs/9 with If-Match: \"v1\", but the document's current ETag is \"v2\". Which status code should the server return?",
+        "options": [
+          "304 Not Modified",
+          "409 Conflict",
+          "412 Precondition Failed",
+          "428 Precondition Required"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "Which status code best fits trying to create a user whose username already exists (a conflict with the resource's current state)?",
+        "options": [
+          "400 Bad Request",
+          "409 Conflict",
+          "404 Not Found",
+          "503 Service Unavailable"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "A request contains well-formed JSON, but a field fails a business rule (e.g., age is -5). Which status code is designed for this?",
+        "options": [
+          "422 Unprocessable Content",
+          "415 Unsupported Media Type",
+          "406 Not Acceptable",
+          "500 Internal Server Error"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "A client exceeds the API's rate limit. Which response is most appropriate?",
+        "options": [
+          "429 Too Many Requests, optionally with a Retry-After header",
+          "403 Forbidden with no further details",
+          "503 Service Unavailable with Location",
+          "400 Bad Request"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "When is 503 Service Unavailable appropriate?",
+        "options": [
+          "The server is temporarily unable to handle requests, e.g. overload or maintenance",
+          "The requested resource never existed",
+          "The client's token has expired",
+          "The client used an unsupported HTTP method"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Per RFC 9110, which header must a 405 Method Not Allowed response include?",
+        "options": [
+          "Location",
+          "Retry-After",
+          "WWW-Authenticate",
+          "Allow"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "Which status code is a permanent redirect that requires the client to keep the original method and body?",
+        "options": [
+          "301 Moved Permanently",
+          "308 Permanent Redirect",
+          "302 Found",
+          "307 Temporary Redirect"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "What does Cache-Control: no-cache mean?",
+        "options": [
+          "The response must never be stored by any cache",
+          "The response may be reused without revalidation for one hour",
+          "Caches may store the response but must revalidate it with the origin before each reuse",
+          "Only browser caches may store it, never shared caches"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is HATEOAS?",
+        "options": [
+          "A token format used to authenticate API calls",
+          "A way to compress JSON responses",
+          "A protocol for streaming events to clients",
+          "Responses include hypermedia links that tell the client which related resources and actions are available"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "Which of these is NOT a common API versioning strategy?",
+        "options": [
+          "A version segment in the URI path, e.g. /v1/orders",
+          "A custom header or versioned media type in Accept",
+          "Using a different HTTP method for each version",
+          "A query parameter such as ?version=1"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "What is a key advantage of cursor-based (keyset) pagination over offset-based pagination?",
+        "options": [
+          "Pages stay stable when rows are inserted or deleted, and deep pages stay fast on large datasets",
+          "Clients can jump directly to any arbitrary page number",
+          "It needs no sort order",
+          "It returns the total row count for free"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Which statement about CORS is true?",
+        "options": [
+          "Browsers enforce it; the server opts in to cross-origin access with headers such as Access-Control-Allow-Origin",
+          "It stops tools like curl or Postman from calling the API",
+          "Preflight requests use the HEAD method",
+          "Access-Control-Allow-Origin: * permits credentialed requests with cookies"
+        ],
+        "answer": "A"
+      },
+      {
+        "q": "Which cross-origin browser request triggers a CORS preflight (OPTIONS) request?",
+        "options": [
+          "A GET with no custom headers",
+          "A POST with Content-Type: application/x-www-form-urlencoded",
+          "A HEAD with no custom headers",
+          "A fetch POST with Content-Type: application/json"
+        ],
+        "answer": "D"
+      },
+      {
+        "q": "Which statement about a standard signed JWT (JWS) is true?",
+        "options": [
+          "Its payload is encrypted, so it is safe to put passwords in it",
+          "The signature prevents the token from being stolen and replayed",
+          "Its payload is only Base64URL-encoded, not encrypted, so anyone holding the token can read the claims",
+          "A JWT can be revoked instantly just by the client deleting it"
+        ],
+        "answer": "C"
+      },
+      {
+        "q": "Which OAuth 2.0 flow is recommended for public clients such as single-page apps and mobile apps?",
+        "options": [
+          "Implicit grant",
+          "Authorization Code with PKCE",
+          "Resource Owner Password Credentials",
+          "Client Credentials"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "A payment API lets clients send an Idempotency-Key header with POST /payments. Why?",
+        "options": [
+          "To encrypt the request body",
+          "So the server can recognize retries of the same request and avoid creating duplicate charges",
+          "To make POST a safe method",
+          "To identify which API version to use"
+        ],
+        "answer": "B"
+      },
+      {
+        "q": "How is an OAuth 2.0 access token conventionally sent to a resource server?",
+        "options": [
+          "Accept: Token <token>",
+          "Authorization: Bearer <token>",
+          "Content-Type: bearer/<token>",
+          "In the ETag header"
+        ],
+        "answer": "B"
+      }
+    ]
+  }
+]

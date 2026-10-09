@@ -39,3 +39,4 @@ src/main/resources/secrets.properties
 
 ### Uploaded videos (local storage) ###
 uploads/
+__pycache__/

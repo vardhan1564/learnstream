@@ -16,6 +16,9 @@ public interface QuizRepository extends JpaRepository<Quiz, Long> {
 
     List<Quiz> findByCourseIdAndPublishedTrue(Long courseId);
 
+    @Query("SELECT q.title FROM Quiz q")
+    List<String> findAllTitles();
+
     @Modifying
     @Query("UPDATE Quiz q SET q.course = NULL WHERE q.course.id = :courseId")
     void detachFromCourse(@Param("courseId") Long courseId);

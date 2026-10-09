@@ -1,0 +1,3314 @@
+[
+ {
+  "title": "Java MCQs - Part 1: Fundamentals",
+  "description": "Warm up with Java basics: primitive types, operators, strings, OOP, access modifiers, exceptions and core collections.",
+  "category": "Java",
+  "questions": [
+   {
+    "q": "Which Java primitive type is a 64-bit signed integer?",
+    "options": [
+     "long",
+     "int",
+     "short",
+     "double"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What is the output?\n\nint x = 5;\nSystem.out.println(x++ + ++x);",
+    "options": [
+     "12",
+     "11",
+     "10",
+     "13"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What is the default value of an int instance field that is never explicitly initialized?",
+    "options": [
+     "0",
+     "null",
+     "-1",
+     "It causes a compile error when read"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What is the output?\n\nString s = \"hello\";\ns.toUpperCase();\nSystem.out.println(s);",
+    "options": [
+     "HELLO",
+     "Hello",
+     "hello",
+     "null"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is the output?\n\nString a = new String(\"hi\");\nString b = \"hi\";\nSystem.out.println(a == b);\nSystem.out.println(a.equals(b));",
+    "options": [
+     "true, then true",
+     "false, then true",
+     "false, then false",
+     "true, then false"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which keyword prevents a class from being subclassed?",
+    "options": [
+     "static",
+     "final",
+     "abstract",
+     "private"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "A field or method of a class is declared with no access modifier. Where is it accessible?",
+    "options": [
+     "From any class anywhere",
+     "Only from within the same class",
+     "Only from classes in the same package",
+     "From the same package and from subclasses in any package"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which of these is a checked exception?",
+    "options": [
+     "NullPointerException",
+     "java.io.IOException",
+     "ArithmeticException",
+     "ArrayIndexOutOfBoundsException"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is the output?\n\nSystem.out.println(10 / 3 + \" \" + 10 % 3 + \" \" + 10 / 3.0);",
+    "options": [
+     "3.33 1 3.33",
+     "3 1 3.3333333333333335",
+     "3 1 3",
+     "3 0 3.3333333333333335"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which of the following can a Java interface NOT declare?",
+    "options": [
+     "default methods",
+     "static methods",
+     "Instance (non-static) fields",
+     "private methods"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "When is the specific overloaded method to call chosen?",
+    "options": [
+     "At runtime, based on the actual object types of the arguments",
+     "When the class is loaded by the JVM",
+     "Randomly, if more than one overload matches",
+     "At compile time, based on the declared argument types"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the output?\n\nclass A { void show() { System.out.println(\"A\"); } }\nclass B extends A { void show() { System.out.println(\"B\"); } }\n\nA obj = new B();\nobj.show();",
+    "options": [
+     "A",
+     "A then B",
+     "B",
+     "Compile error: A has no method show() for type B"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which statement about abstract classes is true?",
+    "options": [
+     "An abstract class can have constructors",
+     "An abstract class can be instantiated directly with new",
+     "Every method in an abstract class must be abstract",
+     "An abstract class cannot declare fields"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which collection type does NOT allow duplicate elements?",
+    "options": [
+     "List",
+     "Deque",
+     "Vector",
+     "Set"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the output?\n\nList<Integer> list = new ArrayList<>(List.of(1, 2, 3));\nlist.remove(1);\nSystem.out.println(list);",
+    "options": [
+     "[2, 3]",
+     "[1, 2]",
+     "UnsupportedOperationException is thrown",
+     "[1, 3]"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does it mean for a method to be declared static?",
+    "options": [
+     "It can be called only once during the program's lifetime",
+     "It cannot be overloaded",
+     "It belongs to the class and can be called without creating an instance",
+     "It can read instance fields directly without an object reference"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is the output?\n\nString s = null;\nSystem.out.println(s + \"x\");",
+    "options": [
+     "x",
+     "A NullPointerException is thrown",
+     "Compile error",
+     "nullx"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which statement about a final reference variable is correct?",
+    "options": [
+     "It cannot be reassigned, but the object it refers to can still be modified",
+     "The object it refers to automatically becomes immutable",
+     "It must always be initialized on the same line it is declared",
+     "It cannot be used inside a lambda expression"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What is the output?\n\nchar c = 'A';\nc += 2;\nSystem.out.println(c);",
+    "options": [
+     "67",
+     "A2",
+     "Compile error: possible lossy conversion",
+     "C"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What happens?\n\nint[] arr = new int[3];\nSystem.out.println(arr[3]);",
+    "options": [
+     "It prints 0",
+     "An ArrayIndexOutOfBoundsException is thrown at runtime",
+     "It prints null",
+     "Compile error"
+    ],
+    "answer": "B"
+   }
+  ]
+ },
+ {
+  "title": "Java MCQs - Part 2: Advanced",
+  "description": "Interview-level Java: HashMap internals, the String pool, streams, Optional, records, generics, concurrency and the JVM.",
+  "category": "Java",
+  "questions": [
+   {
+    "q": "Which rule is part of the equals()/hashCode() contract?",
+    "options": [
+     "If a.equals(b) is true, then a.hashCode() must equal b.hashCode()",
+     "If a.hashCode() == b.hashCode(), then a.equals(b) must be true",
+     "hashCode() must return a unique value for every distinct object",
+     "The compiler rejects classes that override equals() without hashCode()"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "In Java 8+ HashMap, what happens when a single bucket accumulates many colliding entries (and the table is large enough)?",
+    "options": [
+     "The bucket is converted into a sorted array",
+     "The bucket's linked list is converted into a balanced (red-black) tree",
+     "The whole map is converted into a LinkedHashMap",
+     "New colliding entries are silently dropped"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is the output?\n\nstatic int f() {\n    try {\n        return 1;\n    } finally {\n        return 2;\n    }\n}\n\nSystem.out.println(f());",
+    "options": [
+     "1",
+     "2",
+     "Compile error: unreachable code",
+     "1 then 2"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is the output?\n\nString a = \"java\";\nString b = \"ja\" + \"va\";\nString c = \"ja\";\nString d = c + \"va\";\nSystem.out.println((a == b) + \" \" + (a == d));",
+    "options": [
+     "true true",
+     "false false",
+     "false true",
+     "true false"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the output?\n\nint r = Stream.of(1, 2, 3, 4, 5)\n    .filter(n -> n % 2 == 1)\n    .map(n -> n * n)\n    .reduce(0, Integer::sum);\nSystem.out.println(r);",
+    "options": [
+     "35",
+     "55",
+     "15",
+     "20"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What is printed?\n\nStream.of(\"a\", \"b\", \"c\")\n    .peek(System.out::print)\n    .map(String::toUpperCase);",
+    "options": [
+     "Nothing - no terminal operation is invoked, so the pipeline never runs",
+     "abc",
+     "ABC",
+     "aAbBcC"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What is the output?\n\nOptional<String> name = Optional.empty();\nSystem.out.println(name.map(String::length).orElse(-1));",
+    "options": [
+     "0",
+     "null",
+     "A NoSuchElementException is thrown",
+     "-1"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What happens when Optional.of(null) is called?",
+    "options": [
+     "A NullPointerException is thrown",
+     "It returns Optional.empty()",
+     "It returns an Optional that contains null",
+     "A NoSuchElementException is thrown"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which statement about Java records is true?",
+    "options": [
+     "A record can extend another class",
+     "Records generate setter methods for each component",
+     "A record cannot implement interfaces",
+     "A record is implicitly final and its component fields are private and final"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which statement about generics and type erasure is true?",
+    "options": [
+     "You can check obj instanceof List<String> at runtime",
+     "Primitive types such as int can be used as type arguments",
+     "At runtime, List<String> and List<Integer> share the same Class object",
+     "Each parameterization like List<String> gets its own .class file"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Given List<? extends Number> nums, which call compiles?",
+    "options": [
+     "nums.add(1);",
+     "nums.add(1.0);",
+     "nums.add(null);",
+     "nums.add(Integer.valueOf(1));"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is the output with default JVM settings?\n\nInteger a = 127, b = 127;\nInteger c = 128, d = 128;\nSystem.out.println((a == b) + \" \" + (c == d));",
+    "options": [
+     "true true",
+     "true false",
+     "false false",
+     "false true"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which statement about the volatile keyword is correct?",
+    "options": [
+     "It makes compound operations like count++ atomic",
+     "It acquires a monitor lock every time the field is read",
+     "It prevents the field from being changed after construction",
+     "It guarantees visibility of writes across threads but does not make count++ atomic"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What happens if you call t.run() instead of t.start() on a Thread object?",
+    "options": [
+     "A new thread is started, exactly as with start()",
+     "An IllegalThreadStateException is always thrown",
+     "Nothing happens; run() is a no-op",
+     "run() executes synchronously in the calling thread; no new thread is started"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What happens?\n\nList<Integer> list = new ArrayList<>(List.of(1, 2, 3));\nfor (Integer i : list) {\n    if (i == 1) list.remove(i);\n}\nSystem.out.println(list);",
+    "options": [
+     "[2, 3]",
+     "[1, 3]",
+     "A ConcurrentModificationException is thrown",
+     "[1, 2, 3]"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "In Java 8 and later, which JVM memory area holds class metadata?",
+    "options": [
+     "PermGen",
+     "Metaspace",
+     "The young generation of the heap",
+     "Each thread's stack"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "When does an object become eligible for garbage collection?",
+    "options": [
+     "When it is no longer reachable from any GC root (live thread stacks, static fields, etc.)",
+     "As soon as System.gc() is called",
+     "As soon as any one reference to it is set to null",
+     "Only after its finalize() method has been called explicitly"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which of these is NOT a functional interface?",
+    "options": [
+     "java.lang.Runnable",
+     "java.util.Comparator",
+     "java.util.List",
+     "java.util.function.Supplier"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is the output?\n\nclass P {\n    static { System.out.print(\"S\"); }\n    { System.out.print(\"I\"); }\n    P() { System.out.print(\"C\"); }\n}\n\nnew P();\nnew P();",
+    "options": [
+     "SICSIC",
+     "ICSIC",
+     "SICIC",
+     "SCISCI"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is the output?\n\nclass A { static String name() { return \"A\"; } }\nclass B extends A { static String name() { return \"B\"; } }\n\nA obj = new B();\nSystem.out.println(obj.name());",
+    "options": [
+     "B",
+     "A",
+     "AB",
+     "Compile error: static methods cannot be redeclared"
+    ],
+    "answer": "B"
+   }
+  ]
+ },
+ {
+  "title": "Python MCQs - Part 1: Fundamentals",
+  "description": "Test your Python basics: types, slicing, comprehensions, dicts and sets, functions, exceptions and f-strings.",
+  "category": "Python",
+  "questions": [
+   {
+    "q": "What is the output?\n\nprint(type(3 / 2), 7 // 2)",
+    "options": [
+     "<class 'float'> 3",
+     "<class 'int'> 3",
+     "<class 'float'> 3.5",
+     "<class 'int'> 1"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which built-in type is immutable?",
+    "options": [
+     "list",
+     "dict",
+     "set",
+     "tuple"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the output?\n\ns = \"Python\"\nprint(s[1:4], s[-2:])",
+    "options": [
+     "Pyt on",
+     "yth on",
+     "yth hon",
+     "ytho on"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is the output?\n\nnums = [0, 1, 2, 3, 4, 5]\nprint(nums[::2], nums[::-2])",
+    "options": [
+     "[0, 2, 4] [4, 2, 0]",
+     "[1, 3, 5] [5, 3, 1]",
+     "[0, 2, 4] [5, 3, 1]",
+     "[0, 2, 4] [1, 3, 5]"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is the output?\n\nprint([x * x for x in range(5) if x % 2 == 0])",
+    "options": [
+     "[0, 4, 16]",
+     "[4, 16]",
+     "[0, 4, 16, 36]",
+     "[1, 9]"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What is the output?\n\nd = {\"a\": 1}\nprint(d.get(\"b\", 0), \"b\" in d)",
+    "options": [
+     "0 False",
+     "None False",
+     "0 True",
+     "A KeyError is raised"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which expression creates an empty set?",
+    "options": [
+     "{}",
+     "[]",
+     "set()",
+     "()"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is the output?\n\ndef f(*args, **kwargs):\n    print(args, kwargs)\n\nf(1, 2, x=3)",
+    "options": [
+     "[1, 2] {'x': 3}",
+     "(1, 2, 3) {}",
+     "(1, 2) {'x': 3}",
+     "(1, 2) ('x', 3)"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is the output?\n\ndef add(item, bucket=[]):\n    bucket.append(item)\n    return bucket\n\nadd(1)\nprint(add(2))",
+    "options": [
+     "[2]",
+     "[1, 2]",
+     "[1]",
+     "A TypeError is raised"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is the output?\n\na = [1, 2]\nb = [1, 2]\nprint(a == b, a is b)",
+    "options": [
+     "True True",
+     "False False",
+     "False True",
+     "True False"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What happens?\n\ns = \"cat\"\ns[0] = \"b\"",
+    "options": [
+     "s becomes \"bat\"",
+     "A TypeError is raised because strings are immutable",
+     "An IndexError is raised",
+     "A new string \"bat\" is created and bound to s"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which of these values is truthy?",
+    "options": [
+     "0.0",
+     "''",
+     "[0]",
+     "{}"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is the output?\n\nprice = 3.14159\nprint(f\"{price:.2f}\")",
+    "options": [
+     "3.141",
+     "3.14159",
+     "3.14",
+     "{price:.2f}"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is the output?\n\ntry:\n    print(\"T\", end=\"\")\nexcept ValueError:\n    print(\"E\", end=\"\")\nelse:\n    print(\"L\", end=\"\")\nfinally:\n    print(\"F\", end=\"\")",
+    "options": [
+     "TF",
+     "TLF",
+     "TEF",
+     "TELF"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which expression creates a tuple containing exactly one element, the number 5?",
+    "options": [
+     "(5)",
+     "[5]",
+     "tuple(5)",
+     "(5,)"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does a Python function return if it finishes without a return statement?",
+    "options": [
+     "0",
+     "False",
+     "It raises a RuntimeError",
+     "None"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the output?\n\nx = 10\n\ndef f():\n    x = 20\n\nf()\nprint(x)",
+    "options": [
+     "10",
+     "20",
+     "None",
+     "An UnboundLocalError is raised"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does list.sort() return?",
+    "options": [
+     "A new sorted list, leaving the original unchanged",
+     "The original list object after sorting",
+     "True if any elements were moved",
+     "None - it sorts the list in place"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which keyword defines a small anonymous function?",
+    "options": [
+     "def",
+     "lambda",
+     "func",
+     "anon"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is the output?\n\nprint(list(zip([1, 2, 3], \"ab\")))",
+    "options": [
+     "[(1, 'a'), (2, 'b')]",
+     "[(1, 'a'), (2, 'b'), (3, None)]",
+     "[(1, 'a'), (2, 'b'), (3, '')]",
+     "A ValueError is raised because the lengths differ"
+    ],
+    "answer": "A"
+   }
+  ]
+ },
+ {
+  "title": "Python MCQs - Part 2: Advanced",
+  "description": "Go deeper into Python: scope and closures, decorators, generators, MRO, dunder methods, context managers and the GIL.",
+  "category": "Python",
+  "questions": [
+   {
+    "q": "In Python's LEGB name-resolution rule, what does LEGB stand for?",
+    "options": [
+     "Local, External, Global, Base",
+     "Local, Enclosing, Global, Built-in",
+     "Lambda, Enclosing, Global, Built-in",
+     "Local, Enclosing, Generic, Built-in"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is the output?\n\ndef outer():\n    count = 0\n    def inc():\n        nonlocal count\n        count += 1\n        return count\n    inc()\n    return inc()\n\nprint(outer())",
+    "options": [
+     "1",
+     "0",
+     "2",
+     "An UnboundLocalError is raised"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What happens when f() is called?\n\nx = 5\n\ndef f():\n    print(x)\n    x = 10\n\nf()",
+    "options": [
+     "It prints 5",
+     "An UnboundLocalError is raised",
+     "It prints 10",
+     "It prints None"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is the output?\n\nfuncs = [lambda: i for i in range(3)]\nprint([f() for f in funcs])",
+    "options": [
+     "[0, 1, 2]",
+     "[0, 0, 0]",
+     "[2, 2, 2]",
+     "A NameError is raised"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is the output?\n\ndef deco(fn):\n    def wrapper(*a):\n        return fn(*a) * 2\n    return wrapper\n\n@deco\ndef add(x, y):\n    return x + y\n\nprint(add(2, 3))",
+    "options": [
+     "5",
+     "7",
+     "10",
+     "A TypeError is raised"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is the main purpose of functools.wraps inside a decorator?",
+    "options": [
+     "It caches the wrapped function's results",
+     "It lets the decorator accept arguments",
+     "It makes the wrapped function thread-safe",
+     "It copies metadata such as __name__ and __doc__ from the wrapped function onto the wrapper"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the output?\n\ndef gen():\n    yield 1\n    yield 2\n\ng = gen()\nprint(next(g), next(g), next(g, \"done\"))",
+    "options": [
+     "1 2 done",
+     "1 2 None",
+     "1 1 done",
+     "A StopIteration is raised"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What is the main advantage of (x * x for x in data) over [x * x for x in data]?",
+    "options": [
+     "It produces items lazily, so it uses far less memory for large inputs",
+     "It can be iterated over any number of times",
+     "It supports indexing like result[3]",
+     "It is always faster, even for tiny inputs"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which two methods make an object an iterator under Python's iterator protocol?",
+    "options": [
+     "__next__ and __len__",
+     "__iter__ and __next__",
+     "__iter__ and __len__",
+     "__getitem__ and __contains__"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is the output?\n\nclass A:\n    def who(self): return \"A\"\nclass B(A):\n    def who(self): return \"B\"\nclass C(A):\n    def who(self): return \"C\"\nclass D(B, C):\n    pass\n\nprint(D().who(), [k.__name__ for k in D.__mro__])",
+    "options": [
+     "B ['D', 'B', 'A', 'C', 'object']",
+     "B ['D', 'B', 'C', 'A', 'object']",
+     "C ['D', 'C', 'B', 'A', 'object']",
+     "A TypeError is raised: inconsistent MRO"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "A class defines __eq__ but not __hash__. What happens when you add an instance to a set?",
+    "options": [
+     "A TypeError is raised because the instance is unhashable",
+     "It works, using the default identity-based hash",
+     "Python derives __hash__ automatically from __eq__",
+     "It works, but the set may contain equal duplicates"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What is the output?\n\nclass P:\n    def __repr__(self):\n        return \"R\"\n\nprint(P(), str(P()))",
+    "options": [
+     "<__main__.P object> R",
+     "R <__main__.P object>",
+     "R R",
+     "An AttributeError is raised because __str__ is missing"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "In a context manager, what happens if __exit__ returns True after an exception occurred inside the with block?",
+    "options": [
+     "The exception is re-raised as usual",
+     "The exception is converted into a RuntimeError",
+     "The with block is executed again",
+     "The exception is suppressed and execution continues after the with block"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which statement about the Global Interpreter Lock (GIL) in standard CPython 3.11 is true?",
+    "options": [
+     "Only one thread executes Python bytecode at a time, so CPU-bound threads don't run in parallel",
+     "It prevents I/O-bound threads from overlapping their waiting time",
+     "It makes every operation on shared objects thread-safe, so locks are never needed",
+     "It also limits processes created with the multiprocessing module"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "For CPU-bound work in standard CPython, which approach achieves true parallelism across cores?",
+    "options": [
+     "multiprocessing (e.g., ProcessPoolExecutor)",
+     "threading.Thread",
+     "asyncio tasks",
+     "ThreadPoolExecutor"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What is the output?\n\nimport copy\na = [[1, 2], [3]]\nb = copy.copy(a)\nb[0].append(9)\nb.append([4])\nprint(a)",
+    "options": [
+     "[[1, 2], [3]]",
+     "[[1, 2, 9], [3], [4]]",
+     "[[1, 2, 9], [3]]",
+     "[[1, 2], [3], [4]]"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which statement about dict in Python 3.7+ is true?",
+    "options": [
+     "Keys are always kept in sorted order",
+     "Lists can be used as keys",
+     "Duplicate keys are stored as separate entries",
+     "Insertion order of keys is guaranteed to be preserved"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the output?\n\ntry:\n    int(\"x\")\nexcept Exception:\n    print(\"E\")\nexcept ValueError:\n    print(\"V\")",
+    "options": [
+     "V",
+     "E then V",
+     "A SyntaxError, because the broader handler comes first",
+     "E"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does the if __name__ == \"__main__\": guard do?",
+    "options": [
+     "Its block runs only when the module is imported",
+     "Its block runs only when the file is executed directly, not when it is imported as a module",
+     "It marks the module's main function for the compiler",
+     "It prevents other modules from importing the file"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is the output?\n\nclass Dog:\n    tricks = []\n\na, b = Dog(), Dog()\na.tricks.append(\"sit\")\nprint(b.tricks)",
+    "options": [
+     "[]",
+     "An AttributeError is raised",
+     "None",
+     "['sit']"
+    ],
+    "answer": "D"
+   }
+  ]
+ },
+ {
+  "title": "SQL MCQs - Part 1: Fundamentals",
+  "description": "Check your grip on core SQL: filtering, sorting, joins, grouping, NULL handling, keys and basic DDL.",
+  "category": "SQL",
+  "questions": [
+   {
+    "q": "Which clause filters individual rows before any grouping happens?",
+    "options": [
+     "HAVING",
+     "ORDER BY",
+     "GROUP BY",
+     "WHERE"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the logical processing order of a SELECT query's clauses?",
+    "options": [
+     "FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY",
+     "SELECT -> FROM -> WHERE -> GROUP BY -> HAVING -> ORDER BY",
+     "FROM -> GROUP BY -> WHERE -> HAVING -> SELECT -> ORDER BY",
+     "FROM -> WHERE -> SELECT -> GROUP BY -> ORDER BY -> HAVING"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Table t has a column x with values 1, NULL, 3, NULL. What does this return?\n\nSELECT COUNT(*), COUNT(x) FROM t;",
+    "options": [
+     "4, 4",
+     "2, 2",
+     "2, 4",
+     "4, 2"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Why does SELECT * FROM t WHERE x = NULL return no rows, even if x has NULLs?",
+    "options": [
+     "NULL rows are always hidden by SELECT *",
+     "= NULL is a syntax error in every database",
+     "NULLs are stored as empty strings, so they don't match",
+     "Comparing with = NULL yields UNKNOWN, never TRUE; you must use IS NULL"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Column score holds 10, 20 and NULL. What does SELECT AVG(score) return?",
+    "options": [
+     "10",
+     "15",
+     "NULL",
+     "30"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does an INNER JOIN return?",
+    "options": [
+     "Only the rows that have matching values in both tables",
+     "All rows from the left table, plus matches from the right",
+     "Every combination of rows from both tables",
+     "All rows from both tables, matched where possible"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "customers: Ana, Ben, Cy. orders: two for Ana, one for Ben, none for Cy. How many rows does this return?\n\nSELECT c.name, o.id\nFROM customers c\nLEFT JOIN orders o ON o.customer_id = c.id;",
+    "options": [
+     "3",
+     "4",
+     "2",
+     "6"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which statement about a PRIMARY KEY is true?",
+    "options": [
+     "A table can have several separate primary keys",
+     "It may contain one NULL value",
+     "Its values must be unique and cannot be NULL",
+     "It must be an integer column"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is the main purpose of a FOREIGN KEY constraint?",
+    "options": [
+     "To speed up every query on the table automatically",
+     "To guarantee the column's values are unique",
+     "To enforce referential integrity: values must match an existing key in the referenced table",
+     "To encrypt the column's data"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "If ORDER BY is given without ASC or DESC, how are rows sorted?",
+    "options": [
+     "Ascending",
+     "Descending",
+     "In insertion order",
+     "In random order"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which value matches the condition name LIKE 'J_n%'?",
+    "options": [
+     "John",
+     "Janet",
+     "Jn",
+     "Joan"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "sales(region, amount) has rows ('N',10), ('N',20), ('S',5), ('S',5), ('E',100). What does this return?\n\nSELECT region, SUM(amount)\nFROM sales\nGROUP BY region\nHAVING SUM(amount) > 10\nORDER BY region;",
+    "options": [
+     "(N, 30), (E, 100)",
+     "(E, 100), (N, 30), (S, 10)",
+     "(E, 100), (N, 30)",
+     "(N, 20), (E, 100)"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is the main difference between UNION and UNION ALL?",
+    "options": [
+     "UNION ALL removes duplicates; UNION keeps them",
+     "UNION requires the same number of columns; UNION ALL does not",
+     "UNION removes duplicate rows from the combined result; UNION ALL keeps them",
+     "UNION ALL can only combine two queries"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which command removes a table's data AND its structure (definition) from the database?",
+    "options": [
+     "DELETE FROM",
+     "TRUNCATE TABLE",
+     "ALTER TABLE ... DROP COLUMN",
+     "DROP TABLE"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does this return when no rows match?\n\nSELECT SUM(x) FROM t WHERE 1 = 0;",
+    "options": [
+     "One row containing NULL",
+     "One row containing 0",
+     "No rows at all",
+     "An error"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which rows does WHERE age BETWEEN 18 AND 30 include?",
+    "options": [
+     "Ages 19 to 29 only",
+     "Ages 18 to 29 only",
+     "Ages from 18 to 30, including both 18 and 30",
+     "Ages 19 to 30 only"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "A column phone_numbers stores values like '555-1234, 555-9876'. Which normal form does this most directly violate?",
+    "options": [
+     "First normal form (1NF)",
+     "Second normal form (2NF)",
+     "Third normal form (3NF)",
+     "Boyce-Codd normal form (BCNF)"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which statement adds a new column to an existing table?",
+    "options": [
+     "UPDATE users ADD email VARCHAR(255);",
+     "ALTER TABLE users ADD email VARCHAR(255);",
+     "INSERT INTO users COLUMN email VARCHAR(255);",
+     "MODIFY TABLE users NEW email VARCHAR(255);"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Table a has 4 rows and table b has 3 rows. How many rows does SELECT * FROM a CROSS JOIN b return?",
+    "options": [
+     "7",
+     "4",
+     "3",
+     "12"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "employees(id, name, manager_id) stores each employee's manager as another employee. How do you list each employee with their manager's name?",
+    "options": [
+     "A CROSS JOIN of employees with itself and no condition",
+     "A self join: FROM employees e JOIN employees m ON e.manager_id = m.id",
+     "UNION employees with itself",
+     "GROUP BY manager_id and select name"
+    ],
+    "answer": "B"
+   }
+  ]
+ },
+ {
+  "title": "SQL MCQs - Part 2: Advanced",
+  "description": "Interview-style SQL: window functions, CTEs, subqueries, transactions and isolation levels, indexing and normalization.",
+  "category": "SQL",
+  "questions": [
+   {
+    "q": "Scores 100, 90, 90, 80 are ranked with ORDER BY score DESC. What are RANK() and DENSE_RANK() for the score 80?",
+    "options": [
+     "RANK = 3, DENSE_RANK = 4",
+     "RANK = 3, DENSE_RANK = 3",
+     "RANK = 4, DENSE_RANK = 4",
+     "RANK = 4, DENSE_RANK = 3"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the key difference between an aggregate with GROUP BY and the same aggregate used as a window function (OVER)?",
+    "options": [
+     "Window functions collapse each group into a single row",
+     "Window functions cannot use PARTITION BY",
+     "Window functions can only be used in the WHERE clause",
+     "A window function computes over related rows but keeps every individual row in the result"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "t(id, amount) has rows (1, 10), (2, 20), (3, 30). What does this return?\n\nSELECT id, SUM(amount) OVER (ORDER BY id) AS running\nFROM t ORDER BY id;",
+    "options": [
+     "running = 60, 60, 60",
+     "running = 10, 20, 30",
+     "running = 10, 30, 60",
+     "running = 60, 50, 30"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this query return?\n\nWITH RECURSIVE n(x) AS (\n  SELECT 1\n  UNION ALL\n  SELECT x + 1 FROM n WHERE x < 5\n)\nSELECT SUM(x) FROM n;",
+    "options": [
+     "15",
+     "5",
+     "10",
+     "It never terminates"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Table a has ids 1, 2, 3. Table b has ids 1 and NULL. What does this return?\n\nSELECT COUNT(*) FROM a\nWHERE id NOT IN (SELECT id FROM b);",
+    "options": [
+     "0",
+     "2",
+     "1",
+     "3"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "When does EXISTS (subquery) evaluate to TRUE?",
+    "options": [
+     "When the subquery returns exactly one row",
+     "When every value returned by the subquery is non-NULL",
+     "When the subquery's first column equals the outer column",
+     "When the subquery returns at least one row"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What makes a subquery correlated?",
+    "options": [
+     "It appears in the FROM clause",
+     "It returns more than one column",
+     "It references columns of the outer query, so it is logically evaluated once per outer row",
+     "It is joined with a UNION"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which ACID property guarantees that a committed transaction survives a crash or power loss?",
+    "options": [
+     "Durability",
+     "Atomicity",
+     "Consistency",
+     "Isolation"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Per the SQL standard, what is the lowest isolation level that prevents dirty reads?",
+    "options": [
+     "READ UNCOMMITTED",
+     "REPEATABLE READ",
+     "READ COMMITTED",
+     "SERIALIZABLE"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Per the SQL standard's definitions, which isolation level is the only one that prevents phantom reads?",
+    "options": [
+     "READ COMMITTED",
+     "SERIALIZABLE",
+     "REPEATABLE READ",
+     "READ UNCOMMITTED"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is a typical downside of adding many indexes to a table?",
+    "options": [
+     "SELECT queries always become slower",
+     "The table can no longer have a primary key",
+     "Rows can no longer contain NULLs",
+     "INSERT/UPDATE/DELETE get slower and more storage is used, since every index must be maintained"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "A B-tree index exists on (last_name, first_name). Which WHERE clause can use it most directly, via the leftmost-prefix rule?",
+    "options": [
+     "WHERE first_name = 'Ana'",
+     "WHERE UPPER(last_name) = 'LEE'",
+     "WHERE last_name = 'Lee'",
+     "WHERE first_name LIKE '%na'"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "In MySQL's InnoDB engine, what is the clustered index of a table that has a primary key?",
+    "options": [
+     "The most recently created secondary index",
+     "A hidden index on every column",
+     "The primary key - the table rows themselves are stored in primary-key order",
+     "There is none; InnoDB never clusters data"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which statement about TRUNCATE compared to DELETE is true?",
+    "options": [
+     "TRUNCATE removes all rows at once and cannot take a WHERE clause",
+     "TRUNCATE can delete only the rows matching a WHERE condition",
+     "TRUNCATE also removes the table's definition",
+     "DELETE without a WHERE clause drops the table"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "orders(order_id PK, customer_id, customer_city): customer_city depends on customer_id, not directly on order_id. Which normal form is violated?",
+    "options": [
+     "First normal form (1NF)",
+     "Third normal form (3NF)",
+     "Second normal form (2NF)",
+     "None; the table is fully normalized"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which statement about a standard (non-materialized) view is true?",
+    "options": [
+     "It stores its own copy of the data",
+     "It stores a query; its rows are derived from the base tables each time it is queried",
+     "Querying it is always faster than querying the base tables",
+     "It cannot be used in a JOIN"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What effect does the WHERE clause have here?\n\nSELECT c.name\nFROM customers c\nLEFT JOIN orders o ON o.customer_id = c.id\nWHERE o.amount > 100;",
+    "options": [
+     "None; LEFT JOIN always keeps every customer",
+     "Customers without orders are removed (o.amount is NULL for them), so it behaves like an INNER JOIN",
+     "It returns only customers without orders",
+     "It is a syntax error to filter the right table of a LEFT JOIN"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "emp.salary contains 100, 200, 300, 300. What does this return?\n\nSELECT MAX(salary) FROM emp\nWHERE salary < (SELECT MAX(salary) FROM emp);",
+    "options": [
+     "300",
+     "200",
+     "100",
+     "NULL"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Why is this query invalid in standard SQL (and in MySQL with ONLY_FULL_GROUP_BY, the default since 5.7)?\n\nSELECT dept, name, COUNT(*)\nFROM emp\nGROUP BY dept;",
+    "options": [
+     "name is neither in GROUP BY nor inside an aggregate function",
+     "COUNT(*) cannot be combined with GROUP BY",
+     "GROUP BY must list every table column",
+     "dept must appear in an ORDER BY clause"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does this return?\n\nSELECT COALESCE(NULL + 5, 0);",
+    "options": [
+     "5",
+     "NULL",
+     "An error",
+     "0"
+    ],
+    "answer": "D"
+   }
+  ]
+ },
+ {
+  "title": "REST API MCQs - Part 1: Fundamentals",
+  "description": "Learn the essentials of REST: HTTP methods, common status codes, resource naming, statelessness and key headers.",
+  "category": "REST API",
+  "questions": [
+   {
+    "q": "What does REST stand for?",
+    "options": [
+     "Remote Execution Service Transport",
+     "Resource State Transmission",
+     "Representational State Transfer",
+     "Reliable Endpoint Service Technology"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which HTTP method is normally used to create a new resource in a collection when the server assigns its ID?",
+    "options": [
+     "GET",
+     "POST",
+     "PUT",
+     "HEAD"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "POST /users\nContent-Type: application/json\n\n{\"name\": \"Ana\"}\n\nThe server creates user 17. What is the most appropriate response?",
+    "options": [
+     "200 OK with an empty body",
+     "204 No Content",
+     "201 Created with a Location: /users/17 header",
+     "302 Found redirecting to /users/17"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does the status code 404 Not Found indicate?",
+    "options": [
+     "The client must authenticate first",
+     "The server crashed while handling the request",
+     "The request body was malformed",
+     "The server can't find a current representation for the requested resource"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "When is 204 No Content typically returned?",
+    "options": [
+     "When the requested resource does not exist",
+     "When a request succeeded and there is no response body to send, e.g. after a DELETE",
+     "When the client sent an empty request body",
+     "When the server is temporarily unavailable"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which HTTP method is defined as safe (read-only)?",
+    "options": [
+     "POST",
+     "PUT",
+     "GET",
+     "DELETE"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which HTTP method is NOT idempotent?",
+    "options": [
+     "POST",
+     "PUT",
+     "DELETE",
+     "GET"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which endpoint best follows REST resource-naming conventions for listing a user's orders?",
+    "options": [
+     "GET /users/42/orders",
+     "GET /getUserOrders?id=42",
+     "POST /users/42/getOrders",
+     "GET /user_orders_list/42"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does statelessness mean in REST?",
+    "options": [
+     "Each request carries all the information needed to process it; the server keeps no client session state between requests",
+     "The server never stores any data in a database",
+     "Responses can never be cached",
+     "Clients may not keep any state either"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "A request to a protected endpoint has no credentials (or an invalid token). Which status code fits best?",
+    "options": [
+     "401 Unauthorized",
+     "403 Forbidden",
+     "400 Bad Request",
+     "404 Not Found"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "A logged-in user tries to delete another user's account but lacks permission. Which status code fits best?",
+    "options": [
+     "401 Unauthorized",
+     "405 Method Not Allowed",
+     "500 Internal Server Error",
+     "403 Forbidden"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does the Content-Type header in a request indicate?",
+    "options": [
+     "The media types the client accepts in the response",
+     "The type of authentication being used",
+     "The media type of the request body, e.g. application/json",
+     "The HTTP method being used"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does the Accept request header do?",
+    "options": [
+     "It tells the server to accept the request without validation",
+     "It tells the server which response media types the client can handle (content negotiation)",
+     "It lists the HTTP methods the server supports",
+     "It carries the client's access token"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does 500 Internal Server Error indicate?",
+    "options": [
+     "The client sent invalid JSON",
+     "The server hit an unexpected condition that prevented it from fulfilling the request",
+     "The client is not logged in",
+     "The resource was permanently moved"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which is the most RESTful way to request books sorted by price?",
+    "options": [
+     "GET /products/filter/books/sortByPrice/true",
+     "POST /getProducts with category=books in the body",
+     "DELETE /products?category!=books",
+     "GET /products?category=books&sort=price"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which statement about REST is true?",
+    "options": [
+     "REST is an architectural style; it doesn't mandate JSON, and a resource can have several representations",
+     "REST is a protocol standardized by the W3C",
+     "REST APIs must exchange XML documents",
+     "REST requires a persistent WebSocket connection"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does PUT /users/42 with a complete user representation in the body do?",
+    "options": [
+     "Appends a new user to the /users collection with a server-chosen ID",
+     "Updates only the fields that changed and ignores the rest",
+     "Replaces the state of the resource at /users/42 with the given representation (or creates it there)",
+     "Deletes user 42 and returns its old data"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "A client sends a body containing malformed JSON (a missing closing brace). Which status code fits best?",
+    "options": [
+     "404 Not Found",
+     "500 Internal Server Error",
+     "201 Created",
+     "400 Bad Request"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "In a 201 Created response, what does the Location header usually contain?",
+    "options": [
+     "The server's geographic region",
+     "The URI of the newly created resource",
+     "The URI of the API documentation",
+     "The client's IP address"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which HTTP method returns the same headers as GET but without a response body?",
+    "options": [
+     "OPTIONS",
+     "TRACE",
+     "CONNECT",
+     "HEAD"
+    ],
+    "answer": "D"
+   }
+  ]
+ },
+ {
+  "title": "REST API MCQs - Part 2: Advanced",
+  "description": "Level up on API design: PUT vs PATCH, idempotency, conditional requests and caching, versioning, pagination, CORS and auth.",
+  "category": "REST API",
+  "questions": [
+   {
+    "q": "How does PATCH differ from PUT?",
+    "options": [
+     "PATCH creates resources; PUT only deletes them",
+     "PATCH is always idempotent; PUT never is",
+     "PATCH applies a partial modification; PUT replaces the target resource's entire state",
+     "PATCH must send the full resource; PUT sends only changes"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "A client sends DELETE /items/5 twice. The first returns 204, the second 404. Is DELETE still idempotent?",
+    "options": [
+     "No - different status codes prove it is not idempotent",
+     "Only if the server returned 204 both times",
+     "No - DELETE is defined as non-idempotent",
+     "Yes - idempotency concerns the effect on server state, not identical responses"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "A client sends GET /report with If-None-Match: \"abc123\", and the resource's current ETag is still \"abc123\". What should the server return?",
+    "options": [
+     "200 OK with the full body",
+     "412 Precondition Failed",
+     "204 No Content",
+     "304 Not Modified with no body"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "A client sends PUT /docs/9 with If-Match: \"v1\", but the document's current ETag is \"v2\". Which status code should the server return?",
+    "options": [
+     "304 Not Modified",
+     "409 Conflict",
+     "412 Precondition Failed",
+     "428 Precondition Required"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which status code best fits trying to create a user whose username already exists (a conflict with the resource's current state)?",
+    "options": [
+     "400 Bad Request",
+     "409 Conflict",
+     "404 Not Found",
+     "503 Service Unavailable"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "A request contains well-formed JSON, but a field fails a business rule (e.g., age is -5). Which status code is designed for this?",
+    "options": [
+     "422 Unprocessable Content",
+     "415 Unsupported Media Type",
+     "406 Not Acceptable",
+     "500 Internal Server Error"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "A client exceeds the API's rate limit. Which response is most appropriate?",
+    "options": [
+     "429 Too Many Requests, optionally with a Retry-After header",
+     "403 Forbidden with no further details",
+     "503 Service Unavailable with Location",
+     "400 Bad Request"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "When is 503 Service Unavailable appropriate?",
+    "options": [
+     "The server is temporarily unable to handle requests, e.g. overload or maintenance",
+     "The requested resource never existed",
+     "The client's token has expired",
+     "The client used an unsupported HTTP method"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Per RFC 9110, which header must a 405 Method Not Allowed response include?",
+    "options": [
+     "Location",
+     "Retry-After",
+     "WWW-Authenticate",
+     "Allow"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which status code is a permanent redirect that requires the client to keep the original method and body?",
+    "options": [
+     "301 Moved Permanently",
+     "308 Permanent Redirect",
+     "302 Found",
+     "307 Temporary Redirect"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does Cache-Control: no-cache mean?",
+    "options": [
+     "The response must never be stored by any cache",
+     "The response may be reused without revalidation for one hour",
+     "Caches may store the response but must revalidate it with the origin before each reuse",
+     "Only browser caches may store it, never shared caches"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is HATEOAS?",
+    "options": [
+     "A token format used to authenticate API calls",
+     "A way to compress JSON responses",
+     "A protocol for streaming events to clients",
+     "Responses include hypermedia links that tell the client which related resources and actions are available"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which of these is NOT a common API versioning strategy?",
+    "options": [
+     "A version segment in the URI path, e.g. /v1/orders",
+     "A custom header or versioned media type in Accept",
+     "Using a different HTTP method for each version",
+     "A query parameter such as ?version=1"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is a key advantage of cursor-based (keyset) pagination over offset-based pagination?",
+    "options": [
+     "Pages stay stable when rows are inserted or deleted, and deep pages stay fast on large datasets",
+     "Clients can jump directly to any arbitrary page number",
+     "It needs no sort order",
+     "It returns the total row count for free"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which statement about CORS is true?",
+    "options": [
+     "Browsers enforce it; the server opts in to cross-origin access with headers such as Access-Control-Allow-Origin",
+     "It stops tools like curl or Postman from calling the API",
+     "Preflight requests use the HEAD method",
+     "Access-Control-Allow-Origin: * permits credentialed requests with cookies"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which cross-origin browser request triggers a CORS preflight (OPTIONS) request?",
+    "options": [
+     "A GET with no custom headers",
+     "A POST with Content-Type: application/x-www-form-urlencoded",
+     "A HEAD with no custom headers",
+     "A fetch POST with Content-Type: application/json"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which statement about a standard signed JWT (JWS) is true?",
+    "options": [
+     "Its payload is encrypted, so it is safe to put passwords in it",
+     "The signature prevents the token from being stolen and replayed",
+     "Its payload is only Base64URL-encoded, not encrypted, so anyone holding the token can read the claims",
+     "A JWT can be revoked instantly just by the client deleting it"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which OAuth 2.0 flow is recommended for public clients such as single-page apps and mobile apps?",
+    "options": [
+     "Implicit grant",
+     "Authorization Code with PKCE",
+     "Resource Owner Password Credentials",
+     "Client Credentials"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "A payment API lets clients send an Idempotency-Key header with POST /payments. Why?",
+    "options": [
+     "To encrypt the request body",
+     "So the server can recognize retries of the same request and avoid creating duplicate charges",
+     "To make POST a safe method",
+     "To identify which API version to use"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "How is an OAuth 2.0 access token conventionally sent to a resource server?",
+    "options": [
+     "Accept: Token <token>",
+     "Authorization: Bearer <token>",
+     "Content-Type: bearer/<token>",
+     "In the ETag header"
+    ],
+    "answer": "B"
+   }
+  ]
+ },
+ {
+  "title": "HTML MCQs - Part 1: Fundamentals",
+  "description": "Warm up with the building blocks of every web page: document structure, links, images, lists, tables and forms.",
+  "category": "HTML",
+  "questions": [
+   {
+    "q": "What does <!DOCTYPE html> at the top of a page do?",
+    "options": [
+     "Declares the character encoding of the document",
+     "Tells the browser to render the page in standards mode as an HTML5 document",
+     "Creates the <html> root element automatically",
+     "Downloads the HTML DTD so the page can be validated"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which element contains the visible content of a web page?",
+    "options": [
+     "<head>",
+     "<title>",
+     "<meta>",
+     "<body>"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which is the correct way to declare UTF-8 encoding in an HTML5 document?",
+    "options": [
+     "<meta encoding=\"UTF-8\">",
+     "<html encoding=\"UTF-8\">",
+     "<charset>UTF-8</charset>",
+     "<meta charset=\"UTF-8\">"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which heading element represents the highest-level (most important) heading?",
+    "options": [
+     "<head>",
+     "<h1>",
+     "<header>",
+     "<h6>"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is the main purpose of the alt attribute on an <img>?",
+    "options": [
+     "It controls the image's alignment within the text",
+     "It provides a text alternative for screen readers and for when the image cannot be shown",
+     "It compresses the image for faster loading",
+     "It sets a backup image URL to load if the first one fails"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does target=\"_blank\" do in this link?\n\n<a href=\"https://example.com\" target=\"_blank\">Docs</a>",
+    "options": [
+     "Opens the link in the same tab",
+     "Downloads the linked page instead of displaying it",
+     "Opens the link in a new tab or window",
+     "Prevents the link from being followed"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which element creates a numbered (ordered) list?",
+    "options": [
+     "<ul>",
+     "<ol>",
+     "<li>",
+     "<dl>"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which numbers are displayed for this list?\n\n<ol start=\"3\" reversed>\n  <li>A</li>\n  <li>B</li>\n  <li>C</li>\n</ol>",
+    "options": [
+     "3, 4, 5",
+     "3, 2, 1",
+     "1, 2, 3",
+     "5, 4, 3"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which input type shows a native date picker in modern browsers?",
+    "options": [
+     "<input type=\"day\">",
+     "<input type=\"calendar\">",
+     "<input type=\"date\">",
+     "<input type=\"datepicker\">"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Why should you connect <label for=\"email\"> to <input id=\"email\">?",
+    "options": [
+     "Clicking the label focuses the input, and screen readers announce the label for the input",
+     "It sends the label text to the server along with the value",
+     "It automatically validates the input as an email address",
+     "It makes the input a required field"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which attribute prevents a form from submitting while a field is empty?",
+    "options": [
+     "mandatory",
+     "notempty",
+     "validate",
+     "required"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which of these elements is inline (not block-level) by default?",
+    "options": [
+     "<section>",
+     "<div>",
+     "<span>",
+     "<p>"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this tag do?\n\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+    "options": [
+     "Makes the layout viewport match the device width so the page is not rendered as a zoomed-out desktop page on phones",
+     "Loads a separate mobile stylesheet",
+     "Sets the minimum size of the browser window on desktop",
+     "Disables zooming on every device"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which semantic element best represents a self-contained piece of content, such as a blog post or news story?",
+    "options": [
+     "<nav>",
+     "<div>",
+     "<article>",
+     "<aside>"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which element defines a header cell inside a table row?",
+    "options": [
+     "<th>",
+     "<td>",
+     "<thead>",
+     "<header>"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which attribute makes a <td> span across two columns?",
+    "options": [
+     "merge=\"2\"",
+     "span=\"2\"",
+     "colspan=\"2\"",
+     "rowspan=\"2\""
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Given the element below, how do you read the value \"42\" in JavaScript?\n\n<div id=\"card\" data-user-id=\"42\"></div>",
+    "options": [
+     "card.dataset.userId",
+     "card.data.userId",
+     "card.getData(\"userId\")",
+     "card.dataset.user-id"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which of these is NOT a valid HTML input type?",
+    "options": [
+     "color",
+     "range",
+     "email",
+     "slider"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "A <button> is placed inside a <form> without a type attribute. What is its default type?",
+    "options": [
+     "submit",
+     "reset",
+     "none",
+     "button"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which is the correct syntax for a comment in HTML?",
+    "options": [
+     "// This is a comment",
+     "/* This is a comment */",
+     "<# This is a comment #>",
+     "<!-- This is a comment -->"
+    ],
+    "answer": "D"
+   }
+  ]
+ },
+ {
+  "title": "HTML MCQs - Part 2: Advanced",
+  "description": "Go deeper into script loading, accessibility and ARIA, responsive images, form validation and parser quirks.",
+  "category": "HTML",
+  "questions": [
+   {
+    "q": "What is true about a classic script loaded with the defer attribute?\n\n<script src=\"app.js\" defer></script>",
+    "options": [
+     "It downloads in parallel and runs after the document is parsed, in document order, before DOMContentLoaded",
+     "It blocks HTML parsing until it has downloaded and run",
+     "It runs only after the window load event, once all images have loaded",
+     "It runs as soon as it finishes downloading, possibly before parsing is done"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Two scripts both use the async attribute. Which statement is true?",
+    "options": [
+     "They always execute in the order they appear in the document",
+     "They may execute in either order, depending on which finishes downloading first",
+     "They wait until DOMContentLoaded before executing",
+     "They never pause the HTML parser, even while executing"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "How does a <script type=\"module\"> behave by default?",
+    "options": [
+     "It runs in sloppy (non-strict) mode unless \"use strict\" is added",
+     "It is deferred by default, so it does not block parsing and runs after the document is parsed",
+     "It blocks parsing exactly like a classic script without attributes",
+     "It cannot use import statements unless async is also set"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Following the first rule of ARIA, what should you do instead of adding role=\"button\" to a clickable <div>?",
+    "options": [
+     "Wrap the <div> in an <a> element without an href",
+     "Add aria-hidden=\"true\" to the <div>",
+     "Add tabindex=\"-1\" to the <div>",
+     "Use a native <button> element, which already has the role, focus and keyboard behavior"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does aria-hidden=\"true\" do to an element?",
+    "options": [
+     "Removes it and its descendants from the accessibility tree while it stays visible on screen",
+     "Prevents search engines from indexing its content",
+     "Hides it visually, exactly like display: none",
+     "Disables all mouse and keyboard events on it"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does tabindex=\"-1\" do on an element?",
+    "options": [
+     "Makes it focusable from script (element.focus()) but removes it from the sequential Tab order",
+     "Moves it to the very first position in the Tab order",
+     "Disables the element and any form value it has",
+     "Moves it to the very last position in the Tab order"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What is the effect of an empty sandbox attribute on an iframe?\n\n<iframe src=\"widget.html\" sandbox></iframe>",
+    "options": [
+     "It only forces the iframe to be loaded over HTTPS",
+     "It only prevents the iframe from navigating the top-level page",
+     "All restrictions are lifted, giving the iframe full access",
+     "All sandbox restrictions apply, e.g. scripts, form submission and popups are blocked"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the purpose of rel=\"noopener\" on a link that opens a new tab?",
+    "options": [
+     "It prevents the opened page from accessing the original page through window.opener",
+     "It forces the link to open in the same tab",
+     "It tells search engines not to follow the link",
+     "It preloads the linked page in the background"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which attribute on a <form> element disables the browser's built-in constraint validation when the form is submitted?",
+    "options": [
+     "skipvalidation",
+     "noverify",
+     "validate=\"false\"",
+     "novalidate"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which value satisfies the following input's pattern (pattern must match the entire value)?\n\n<input pattern=\"[0-9]{3}\">",
+    "options": [
+     "12a",
+     "0123",
+     "123",
+     "1234"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "How do disabled and readonly differ for a text input inside a form?",
+    "options": [
+     "Neither value is submitted with the form",
+     "A disabled field's value is submitted with the form; a readonly field's value is not",
+     "A readonly field's value is submitted with the form; a disabled field's value is not",
+     "Both values are submitted, and both fields can be edited by the user"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does the w descriptor mean in this srcset?\n\n<img src=\"small.jpg\"\n     srcset=\"small.jpg 800w, large.jpg 1600w\"\n     sizes=\"(max-width: 600px) 100vw, 50vw\" alt=\"\">",
+    "options": [
+     "The file size of each image in kilobytes",
+     "The intrinsic width of each image file in pixels",
+     "The maximum viewport width at which the image may be used",
+     "The width at which the image will be displayed in CSS pixels"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does loading=\"lazy\" on an <img> do?",
+    "options": [
+     "Loads a lower-quality version of the image first",
+     "Loads the image only after all scripts have run",
+     "Prevents the image from being cached",
+     "Defers loading the image until it is near the viewport"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which method opens a <dialog> element as a modal, with a ::backdrop and the rest of the page made inert?",
+    "options": [
+     "dialog.open()",
+     "dialog.openModal()",
+     "dialog.show()",
+     "dialog.showModal()"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which pair of elements creates a native expand/collapse widget without any JavaScript?",
+    "options": [
+     "<dialog> and <legend>",
+     "<fieldset> and <legend>",
+     "<details> and <summary>",
+     "<section> and <header>"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "How does a browser parse this markup?\n\n<p>Hello <div>World</div></p>",
+    "options": [
+     "The browser stops rendering and shows a parse error",
+     "The <p> is closed automatically before the <div>, and the stray </p> creates an extra empty <p></p>",
+     "The <div> is converted into a <span> to keep it inside the <p>",
+     "The <div> is nested inside the <p> exactly as written"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "For <video autoplay> to reliably start playing automatically in modern browsers, which attribute is usually also needed?",
+    "options": [
+     "muted",
+     "preload=\"auto\"",
+     "loop",
+     "controls"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does <link rel=\"preload\" href=\"font.woff2\" as=\"font\" crossorigin> do?",
+    "options": [
+     "Executes the resource before any other script on the page",
+     "Fetches a resource at low priority for a likely future navigation",
+     "Tells the browser to fetch a resource early because the current page will need it soon",
+     "Only resolves DNS and opens a connection to another origin"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "An unchecked checkbox <input type=\"checkbox\" name=\"terms\" value=\"yes\"> is in a submitted form. What is sent for it?",
+    "options": [
+     "terms=off",
+     "terms= (an empty value)",
+     "Nothing; unchecked checkboxes are not included in the form data",
+     "terms=no"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "How many <main> elements may be visible in a document at the same time?",
+    "options": [
+     "Any number, as long as each has an id",
+     "At most one; any additional <main> elements must be hidden",
+     "One per <article>",
+     "Exactly two: one for content and one for the sidebar"
+    ],
+    "answer": "B"
+   }
+  ]
+ },
+ {
+  "title": "CSS MCQs - Part 1: Fundamentals",
+  "description": "Check your grip on selectors, the cascade, the box model, units, positioning and the basics of flexbox and grid.",
+  "category": "CSS",
+  "questions": [
+   {
+    "q": "Which selector has the highest specificity?",
+    "options": [
+     "#nav .item",
+     "ul li a",
+     ".a.b.c",
+     ".nav .item a"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What color is the paragraph text?\n\np { color: red; }\np { color: blue; }",
+    "options": [
+     "purple",
+     "red",
+     "The browser default color",
+     "blue"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the total rendered width of the box (default box-sizing)?\n\n.box {\n  width: 200px;\n  padding: 20px;\n  border: 5px solid black;\n}",
+    "options": [
+     "200px",
+     "250px",
+     "245px",
+     "240px"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What color is the text of this paragraph?\n\n/* CSS */\n.a { color: red; }\n#b { color: blue; }\n\n<!-- HTML -->\n<p id=\"b\" class=\"a\" style=\"color: green\">Hi</p>",
+    "options": [
+     "red",
+     "blue",
+     "green",
+     "black"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is 1rem relative to?",
+    "options": [
+     "The font-size of the root (<html>) element",
+     "The element's own line-height",
+     "1% of the viewport width",
+     "The font-size of the parent element"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which of these properties is inherited by default?",
+    "options": [
+     "color",
+     "margin",
+     "border",
+     "background-color"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "On a non-replaced inline element such as <span>, which property has no effect?",
+    "options": [
+     "padding-left",
+     "color",
+     "width",
+     "font-size"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "An element with position: absolute is positioned relative to what?",
+    "options": [
+     "Always the <body> element",
+     "Always the browser viewport",
+     "Its nearest ancestor whose position is not static",
+     "Always its direct parent element"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "When no ancestor has a transform, filter or similar property, an element with position: fixed is positioned relative to what?",
+    "options": [
+     "The <html> element's content box",
+     "The viewport",
+     "Its parent element",
+     "Its original place in the normal flow"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "In a flex container with flex-direction: row, which declaration centers the items horizontally?",
+    "options": [
+     "text-align: center",
+     "align-items: center",
+     "align-content: center",
+     "justify-content: center"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which of these is a pseudo-element?",
+    "options": [
+     ":hover",
+     "::before",
+     ":focus",
+     ":first-child"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "When does the rule inside @media (max-width: 600px) { ... } apply?",
+    "options": [
+     "Only when the viewport is exactly 600px wide",
+     "When the viewport is wider than 600px",
+     "When the viewport is 600px wide or narrower",
+     "Only when the physical screen is 600 device pixels wide"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which declaration horizontally centers a block element that has a fixed width?",
+    "options": [
+     "text-align: center;",
+     "align: center;",
+     "margin: 0 auto;",
+     "float: center;"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Given :root { --main-color: #333; }, which declaration correctly uses the custom property?",
+    "options": [
+     "color: --main-color();",
+     "color: var(--main-color);",
+     "color: @main-color;",
+     "color: $main-color;"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does grid-template-columns: repeat(3, 1fr); create?",
+    "options": [
+     "Three columns that are each 1 pixel wide",
+     "One column that is three times wider than normal",
+     "Three rows of equal height",
+     "Three columns that share the available space equally"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "A 600px-wide flex container (no gap, padding or borders) holds three children, each with flex: 1 and a short word of text. How wide is each child?",
+    "options": [
+     "100px",
+     "As wide as its text content",
+     "600px",
+     "200px"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which declaration hides an element but still keeps its space in the layout?",
+    "options": [
+     "visibility: hidden;",
+     "position: static;",
+     "overflow: hidden;",
+     "display: none;"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does this declaration do?\n\n.btn { transition: background-color 0.3s ease; }",
+    "options": [
+     "Changes the background color only while the element is hovered",
+     "Delays every background-color change by 0.3 seconds, then switches instantly",
+     "Plays a background-color animation in an infinite loop",
+     "Animates any change to background-color over 0.3 seconds"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does overflow: auto do?",
+    "options": [
+     "Grows the box so that all content fits",
+     "Shows scrollbars only when the content overflows the box",
+     "Clips the overflowing content with no way to scroll",
+     "Always shows both scrollbars, even if nothing overflows"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which elements does the selector div > p match?",
+    "options": [
+     "<p> elements that are direct children of a <div>",
+     "All <p> siblings that come after a <div>",
+     "All <p> elements anywhere inside a <div>",
+     "The <p> immediately following a <div> as a sibling"
+    ],
+    "answer": "A"
+   }
+  ]
+ },
+ {
+  "title": "CSS MCQs - Part 2: Advanced",
+  "description": "Interview-level CSS: specificity edge cases, stacking contexts, margin collapsing, clamp(), :has(), container queries and cascade layers.",
+  "category": "CSS",
+  "questions": [
+   {
+    "q": "What is the specificity of this selector (written as IDs, classes, types)?\n\n:where(#main) .card p",
+    "options": [
+     "0,0,1",
+     "0,1,1",
+     "1,1,1",
+     "1,0,1"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What color is the paragraph text?\n\n/* CSS */\n.note { color: red !important; }\n#intro { color: blue; }\n\n<!-- HTML -->\n<p id=\"intro\" class=\"note\">Hello</p>",
+    "options": [
+     "black",
+     "blue",
+     "red",
+     "purple"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "A child element has z-index: 9999 but still appears behind a sibling of its parent. What is the most likely reason?",
+    "options": [
+     "z-index only works on elements with display: block",
+     "The parent creates a stacking context that is layered below that sibling, and the child cannot escape it",
+     "z-index values above 999 are ignored by browsers",
+     "The child also needs float: left for z-index to apply"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which of these does NOT create a new stacking context?",
+    "options": [
+     "isolation: isolate",
+     "opacity: 0.9",
+     "position: relative with z-index: auto",
+     "transform: translateX(0)"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which is a common reason why position: sticky; top: 0; fails to stick while scrolling the page?",
+    "options": [
+     "The page uses rem units for font sizes",
+     "The element has display: block",
+     "An ancestor has overflow: hidden or auto, creating a different scroll container",
+     "The element has a background-color"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Two block-level siblings sit in normal flow. The first has margin-bottom: 30px, the second has margin-top: 20px. What is the vertical gap between them?",
+    "options": [
+     "10px",
+     "20px",
+     "50px",
+     "30px"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "The same two boxes (margin-bottom: 30px and margin-top: 20px) are now items in a display: flex; flex-direction: column; container. What is the gap between them?",
+    "options": [
+     "50px",
+     "0px",
+     "30px",
+     "20px"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "With a viewport width of 1000px and a root font-size of 16px, what font-size does this produce?\n\nh1 { font-size: clamp(1rem, 2.5vw, 2rem); }",
+    "options": [
+     "25px",
+     "32px",
+     "16px",
+     "40px"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does the selector li:has(> a.active) match?",
+    "options": [
+     "<a class=\"active\"> elements inside an <li>",
+     "<li> elements that have a direct child <a> with class active",
+     "<li> elements that themselves have the class active",
+     "<li> elements that do not contain an active link"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "In grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)), how does auto-fit differ from auto-fill?",
+    "options": [
+     "There is no difference; they are aliases",
+     "auto-fit collapses empty tracks so the existing items stretch to fill the row; auto-fill keeps the empty tracks",
+     "auto-fit creates rows while auto-fill creates columns",
+     "auto-fit keeps empty tracks; auto-fill collapses them"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does grid-column: 1 / -1; do for a grid item?",
+    "options": [
+     "Makes it span from the first to the last line of the explicit grid (the full width)",
+     "Places it in the last column, in reverse order",
+     "Places it only in the first column",
+     "Hides the item because -1 is an invalid line"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does the shorthand flex: 1 expand to?",
+    "options": [
+     "flex-grow: 1; flex-shrink: 0; flex-basis: auto",
+     "flex-grow: 0; flex-shrink: 1; flex-basis: auto",
+     "flex-grow: 1; flex-shrink: 1; flex-basis: 0%",
+     "flex-grow: 1; flex-shrink: 1; flex-basis: auto"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "The root font-size is 16px. What is the computed font-size of .child?\n\n.parent { font-size: 1.5em; }\n.child  { font-size: 1.5em; }\n\n<div class=\"parent\"><p class=\"child\">Text</p></div>",
+    "options": [
+     "27px",
+     "24px",
+     "32px",
+     "36px"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does the keyword unset do when used as a property value?",
+    "options": [
+     "Acts like inherit for inherited properties and like initial for non-inherited properties",
+     "Always acts like inherit, whatever the property",
+     "Removes the property so that the next matching rule in the file applies",
+     "Always resets the property to the browser's user-agent stylesheet value"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Before @container (min-width: 400px) can respond to an ancestor's size, what must that ancestor declare?",
+    "options": [
+     "container-type: inline-size (or size)",
+     "contain: paint",
+     "display: container",
+     "position: relative"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "A ::before pseudo-element has width, height and a background set, but nothing appears. Which property is most likely missing?",
+    "options": [
+     "position: absolute",
+     "display: block",
+     "content (even content: \"\")",
+     "z-index"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does animation-fill-mode: forwards do?",
+    "options": [
+     "Applies the first keyframe styles during the animation-delay only",
+     "Makes the animation repeat forever",
+     "Plays the animation from the last keyframe to the first",
+     "Keeps the styles from the final keyframe applied after the animation ends"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which properties are generally cheapest for the browser to animate smoothly?",
+    "options": [
+     "top and left",
+     "margin and padding",
+     "width and height",
+     "transform and opacity"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "In a horizontal writing mode, a percentage value for padding-top is calculated relative to what?",
+    "options": [
+     "The element's font-size",
+     "The width of the containing block",
+     "The height of the containing block",
+     "The element's own height"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What color is the heading text?\n\n@layer reset {\n  #title { color: red; }\n}\nh1 { color: blue; }\n\n<h1 id=\"title\">Hi</h1>",
+    "options": [
+     "red",
+     "black",
+     "The browser default color",
+     "blue"
+    ],
+    "answer": "D"
+   }
+  ]
+ },
+ {
+  "title": "JavaScript MCQs - Part 1: Fundamentals",
+  "description": "Test the essentials: variables and hoisting, types and coercion, array methods, destructuring, spread and basic async.",
+  "category": "JavaScript",
+  "questions": [
+   {
+    "q": "What does this code log?\n\nconsole.log(typeof null);",
+    "options": [
+     "\"undefined\"",
+     "\"number\"",
+     "\"null\"",
+     "\"object\""
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does this code log?\n\nconsole.log(0.1 + 0.2 === 0.3);",
+    "options": [
+     "false",
+     "TypeError",
+     "NaN",
+     "true"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does this code log?\n\nconst arr = [1];\narr.push(2);\nconsole.log(arr);",
+    "options": [
+     "TypeError: Assignment to constant variable",
+     "SyntaxError",
+     "[1]",
+     "[1, 2]"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does this code log?\n\nconsole.log(x);\nvar x = 5;",
+    "options": [
+     "ReferenceError",
+     "null",
+     "5",
+     "undefined"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What happens when this code runs?\n\nconsole.log(y);\nlet y = 5;",
+    "options": [
+     "It logs null",
+     "ReferenceError, because y is in the temporal dead zone",
+     "It logs undefined",
+     "It logs 5"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does this code log?\n\nconsole.log(\"5\" + 3, \"5\" - 3);",
+    "options": [
+     "53 2",
+     "8 8",
+     "8 2",
+     "53 NaN"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which of these expressions evaluates to true?",
+    "options": [
+     "\"0\" === 0",
+     "null == undefined",
+     "null === undefined",
+     "NaN == NaN"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which of these values is truthy?",
+    "options": [
+     "\"\" (empty string)",
+     "null",
+     "\"0\" (the string zero)",
+     "0"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does [1, 2, 3].map(x => x * 2) return?",
+    "options": [
+     "[1, 2, 3]",
+     "12",
+     "[2, 4, 6]",
+     "undefined"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does [1, 2, 3, 4].filter(n => n % 2 === 0) return?",
+    "options": [
+     "[2, 4]",
+     "[1, 3]",
+     "2",
+     "[false, true, false, true]"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does [1, 2, 3, 4].reduce((acc, n) => acc + n, 0) return?",
+    "options": [
+     "0",
+     "10",
+     "\"1234\"",
+     "[1, 3, 6, 10]"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does this code log?\n\nconst make = () => { a: 1 };\nconsole.log(make());",
+    "options": [
+     "{ a: 1 }",
+     "1",
+     "undefined",
+     "SyntaxError"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this code log?\n\nconst { a = 10, b = 20 } = { a: 1, b: undefined };\nconsole.log(a, b);",
+    "options": [
+     "1 undefined",
+     "10 undefined",
+     "1 20",
+     "10 20"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this code log?\n\nconst a = [1, 2];\nconst b = [...a, 3];\na.push(9);\nconsole.log(b);",
+    "options": [
+     "[1, 2, 9, 3]",
+     "[1, 2, 3, 9]",
+     "[1, 2]",
+     "[1, 2, 3]"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does this code log?\n\nconst user = {};\nconsole.log(user.profile?.name);",
+    "options": [
+     "undefined",
+     "\"\" (empty string)",
+     "TypeError: Cannot read properties of undefined",
+     "null"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does this code log?\n\nconsole.log(0 ?? 5, 0 || 5);",
+    "options": [
+     "5 0",
+     "0 0",
+     "0 5",
+     "5 5"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this code log?\n\nconst a = { x: 1 };\nconst b = a;\nb.x = 2;\nconsole.log(a.x);",
+    "options": [
+     "2",
+     "undefined",
+     "TypeError",
+     "1"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does JSON.stringify({ a: undefined, b: 1 }) return?",
+    "options": [
+     "'{a:undefined,b:1}'",
+     "'{\"b\":1}'",
+     "'{\"a\":undefined,\"b\":1}'",
+     "'{\"a\":null,\"b\":1}'"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does calling event.preventDefault() inside a form's submit handler do?",
+    "options": [
+     "Removes the submit listener from the form",
+     "Stops the event from bubbling to ancestor elements",
+     "Prevents other listeners on the same form from running",
+     "Stops the browser's default action, so the form is not submitted and the page does not reload"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "In what order are the numbers logged?\n\nconsole.log(1);\nsetTimeout(() => console.log(2), 0);\nconsole.log(3);",
+    "options": [
+     "3 1 2",
+     "1 3 2",
+     "2 1 3",
+     "1 2 3"
+    ],
+    "answer": "B"
+   }
+  ]
+ },
+ {
+  "title": "JavaScript MCQs - Part 2: Advanced",
+  "description": "Tackle the event loop, closures, this binding, prototypes, promises and DOM event propagation, with plenty of output-prediction puzzles.",
+  "category": "JavaScript",
+  "questions": [
+   {
+    "q": "In what order are the letters logged?\n\nconsole.log(\"A\");\nsetTimeout(() => console.log(\"B\"), 0);\nPromise.resolve().then(() => console.log(\"C\"));\nconsole.log(\"D\");",
+    "options": [
+     "A D B C",
+     "A D C B",
+     "A C D B",
+     "A B C D"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "In what order are the numbers logged?\n\nasync function f() {\n  console.log(1);\n  await null;\n  console.log(2);\n}\nf();\nconsole.log(3);",
+    "options": [
+     "1 2 3",
+     "3 1 2",
+     "1 3 2",
+     "3 2 1"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this code log?\n\nfor (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 0);\n}",
+    "options": [
+     "0 1 2",
+     "2 2 2",
+     "3 3 3",
+     "0 0 0"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this code log?\n\nfunction counter() {\n  let c = 0;\n  return () => ++c;\n}\nconst a = counter();\nconst b = counter();\na();\na();\nconsole.log(a(), b());",
+    "options": [
+     "3 4",
+     "2 1",
+     "1 1",
+     "3 1"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "In strict mode (for example inside an ES module), what happens here?\n\nconst obj = {\n  name: \"obj\",\n  greet() { return this.name; }\n};\nconst g = obj.greet;\nconsole.log(g());",
+    "options": [
+     "A TypeError is thrown, because this is undefined",
+     "It logs undefined",
+     "It logs \"obj\"",
+     "It logs \"greet\""
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Why are arrow functions convenient as callbacks inside object methods (e.g. in setTimeout)?",
+    "options": [
+     "They make this refer to the callback's caller, such as the timer",
+     "They create a new this for every call, preventing shared state",
+     "They do not have their own this; they use the this of the enclosing scope",
+     "They always bind this to the global object"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this code log?\n\nfunction Person(name) { this.name = name; }\nPerson.prototype.hi = function () { return \"hi\"; };\nconst p = new Person(\"Al\");\nconsole.log(p.hasOwnProperty(\"hi\"), \"hi\" in p);",
+    "options": [
+     "true true",
+     "false true",
+     "false false",
+     "true false"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What happens with this code?\n\nclass A {\n  #x = 1;\n}\nconst a = new A();\nconsole.log(a.#x);",
+    "options": [
+     "It logs 1",
+     "A TypeError at runtime, but only when console.log runs",
+     "It logs undefined",
+     "A SyntaxError, because #x cannot be referenced outside the class body"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does this code log?\n\nconsole.log([10, 1, 5, 100].sort());",
+    "options": [
+     "[100, 10, 5, 1]",
+     "[1, 5, 10, 100]",
+     "[1, 10, 100, 5]",
+     "[10, 1, 5, 100]"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which Promise combinator waits for every promise to settle and never rejects because one of them rejected?",
+    "options": [
+     "Promise.all()",
+     "Promise.allSettled()",
+     "Promise.race()",
+     "Promise.any()"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does this code log?\n\nPromise.resolve(1)\n  .then(x => x + 1)\n  .then(() => { throw new Error(\"boom\"); })\n  .catch(() => 10)\n  .then(x => console.log(x));",
+    "options": [
+     "10",
+     "Error: boom",
+     "2",
+     "undefined"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Event delegation (one listener on a parent handling clicks on many children) relies on which behavior?",
+    "options": [
+     "The event loop's microtask queue",
+     "Event bubbling",
+     "Function hoisting",
+     "Event capturing only"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "A click handler on an <a href=\"/next\"> calls event.stopPropagation() and nothing else. What happens on click?",
+    "options": [
+     "The click handler is removed after the first click",
+     "The browser does not follow the link, but ancestor listeners still run",
+     "Neither ancestor listeners run nor the link is followed",
+     "Ancestor click listeners do not run, but the browser still follows the link"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Clicking the child element produces which log order?\n\nparent.addEventListener(\"click\", () => console.log(\"parent\"), true);\nchild.addEventListener(\"click\", () => console.log(\"child\"));",
+    "options": [
+     "parent child",
+     "child",
+     "parent",
+     "child parent"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does this code log?\n\nconsole.log(NaN === NaN, Number.isNaN(NaN), isNaN(\"abc\"));",
+    "options": [
+     "false false true",
+     "false true false",
+     "true true true",
+     "false true true"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does this code log?\n\nconsole.log(1 < 2 < 3, 3 > 2 > 1);",
+    "options": [
+     "true false",
+     "false false",
+     "false true",
+     "true true"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What happens when this code runs?\n\nfoo();\nbar();\nfunction foo() { console.log(\"foo\"); }\nvar bar = function () { console.log(\"bar\"); };",
+    "options": [
+     "Logs \"foo\" then \"bar\"",
+     "Logs \"foo\", then throws ReferenceError: bar is not defined",
+     "Logs \"foo\", then throws TypeError: bar is not a function",
+     "Throws ReferenceError before logging anything"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "math.js contains export default function add(a, b) { return a + b; }. Which import works?",
+    "options": [
+     "import add from \"./math.js\";",
+     "import * as add from \"./math.js\"; add(1, 2);",
+     "import add() from \"./math.js\";",
+     "import { add } from \"./math.js\";"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does this code log?\n\nconst a = { x: { y: 1 } };\nconst b = { ...a };\nb.x.y = 2;\nconsole.log(a.x.y);",
+    "options": [
+     "undefined",
+     "2",
+     "TypeError",
+     "1"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which statement about Object.freeze(obj) is true?",
+    "options": [
+     "It returns a frozen copy and leaves the original object mutable",
+     "It only prevents adding new properties; existing ones can still be changed",
+     "It deep-freezes every nested object automatically",
+     "It is shallow: objects nested inside obj can still be modified"
+    ],
+    "answer": "D"
+   }
+  ]
+ },
+ {
+  "title": "React MCQs - Part 1: Fundamentals",
+  "description": "Cover the React basics: JSX, props, useState, keys, useEffect, refs and controlled inputs.",
+  "category": "React",
+  "questions": [
+   {
+    "q": "What does JSX compile to?",
+    "options": [
+     "HTML strings that are inserted with innerHTML",
+     "Template literals that the browser parses at runtime",
+     "Function calls (such as jsx() or React.createElement()) that return plain objects describing the UI",
+     "Real DOM nodes created directly at compile time"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which prop sets an element's CSS class in JSX?",
+    "options": [
+     "cssClass",
+     "styleName",
+     "className",
+     "classList"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which statement about props is true?",
+    "options": [
+     "They are read-only inputs; a component should never modify its own props",
+     "Props must be declared with propTypes or they are ignored",
+     "A component can reassign its props to trigger a re-render",
+     "Props can only be strings"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "count starts at 0. What is count after one click?\n\nconst [count, setCount] = useState(0);\nfunction handleClick() {\n  setCount(count + 1);\n  setCount(count + 1);\n  setCount(count + 1);\n}",
+    "options": [
+     "3",
+     "0",
+     "2",
+     "1"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "count starts at 0. What is count after one click?\n\nconst [count, setCount] = useState(0);\nfunction handleClick() {\n  setCount(c => c + 1);\n  setCount(c => c + 1);\n  setCount(c => c + 1);\n}",
+    "options": [
+     "0",
+     "1",
+     "3",
+     "6"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Why does React need a key prop on items rendered from an array?",
+    "options": [
+     "To identify which items were added, removed or moved between renders",
+     "To apply unique CSS styles to each item",
+     "To make each item focusable with the keyboard",
+     "To sort the items alphabetically"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What problem can using the array index as key cause?",
+    "options": [
+     "When items are inserted, removed or reordered, state and DOM can be matched to the wrong item",
+     "React throws an error and refuses to render the list",
+     "Each item re-mounts on every render even if nothing changed",
+     "The list renders in reverse order"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Ignoring StrictMode's extra development checks, when does useEffect(() => { ... }, []) run its effect?",
+    "options": [
+     "After every render",
+     "Never, because the dependency array is empty",
+     "Before the first render",
+     "Once, after the component's first render"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "When does useEffect(() => { ... }) with no dependency array run its effect?",
+    "options": [
+     "Only when props change",
+     "After every render",
+     "Only after the first render",
+     "Only when the component unmounts"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "When does the cleanup function returned from a useEffect run?",
+    "options": [
+     "Only right before the very first render",
+     "Immediately after the effect function returns",
+     "Only when the browser tab is closed",
+     "Before the effect runs again with changed dependencies, and when the component unmounts"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "count is 0. What does this JSX render?\n\n<div>{count && <p>You have items</p>}</div>",
+    "options": [
+     "<p>You have items</p>",
+     "The character 0 inside the div",
+     "The text \"false\"",
+     "Nothing inside the div"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is the purpose of <>...</> (a Fragment)?",
+    "options": [
+     "To prevent the children from re-rendering",
+     "To lazy-load the enclosed components",
+     "To create a separate DOM tree outside the root",
+     "To group several children without adding an extra DOM element"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What happens with this input?\n\nconst [name, setName] = useState(\"\");\nreturn <input value={name} />;",
+    "options": [
+     "React throws an error and the component does not render",
+     "The field is effectively read-only and React warns that value was provided without onChange",
+     "The input ignores the value prop and behaves as uncontrolled",
+     "It works normally and name updates as the user types"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Two sibling components need to read and update the same piece of state. What is the standard React approach?",
+    "options": [
+     "Store the state in a global variable outside any component",
+     "Lift the state up to their closest common parent and pass it down via props",
+     "Have one sibling read the other's state through a ref",
+     "Keep a separate copy of the state in each sibling and sync them with useEffect"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is wrong with this code?\n\n<button onClick={handleClick()}>Save</button>",
+    "options": [
+     "Event handler props must be strings in JSX",
+     "onClick must be written in lowercase as onclick",
+     "handleClick is called during rendering instead of when the button is clicked",
+     "Nothing; this is the recommended way to attach a handler"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which statement about useRef is true?",
+    "options": [
+     "Changing ref.current always triggers a re-render",
+     "useRef can only hold references to DOM elements",
+     "A ref's value is reset to its initial value on every render",
+     "Changing ref.current does not cause the component to re-render"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the problem with this update?\n\nconst [items, setItems] = useState([]);\nfunction add(x) {\n  items.push(x);\n  setItems(items);\n}",
+    "options": [
+     "setItems only accepts a function, not a value",
+     "The state array is mutated and the same reference is passed, so React may skip the re-render",
+     "Nothing; this is the recommended way to add items",
+     "push() is not allowed on arrays stored in state and throws an error"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Why does <myButton /> not render your myButton component?",
+    "options": [
+     "JSX treats lowercase tags as built-in DOM elements; component names must start with a capital letter",
+     "Components must be registered with React.register() first",
+     "Components must be wrapped in a Fragment to render",
+     "Self-closing tags are not allowed for components"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "How does the Card component access the <p> element passed in below?\n\n<Card>\n  <p>Hello</p>\n</Card>",
+    "options": [
+     "Through this.inner",
+     "Through useChildren()",
+     "Through props.children",
+     "Through props.content"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which of these does NOT cause a function component to re-render?",
+    "options": [
+     "Changing a variable declared with let in the component body",
+     "Calling its state setter with a different value",
+     "A context value it reads with useContext changing",
+     "Its parent component re-rendering"
+    ],
+    "answer": "A"
+   }
+  ]
+ },
+ {
+  "title": "React MCQs - Part 2: Advanced",
+  "description": "Interview-level React: batching, memoization, rules of hooks, stale closures, reconciliation, Suspense and routing.",
+  "category": "React",
+  "questions": [
+   {
+    "q": "In development under <StrictMode>, why does an effect with an empty dependency array run, clean up, and run again on mount?",
+    "options": [
+     "Empty dependency arrays always run twice, in development and production",
+     "It is a bug in React 18 that was never fixed",
+     "React deliberately remounts once to help reveal effects that are missing a correct cleanup",
+     "StrictMode renders the component into two separate DOM trees"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "In React 18+, how many re-renders does this cause?\n\nsetTimeout(() => {\n  setA(1);\n  setB(2);\n}, 1000);",
+    "options": [
+     "Three, one for each setter plus a final commit",
+     "Two, because batching only happens inside React event handlers",
+     "Zero, because state cannot be updated inside a timeout",
+     "One, because updates are automatically batched even inside timeouts"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which statement about useCallback is true?",
+    "options": [
+     "useCallback prevents the component itself from re-rendering",
+     "useCallback(fn, deps) is equivalent to useMemo(() => fn, deps)",
+     "useCallback makes fn run in a background thread",
+     "useCallback calls fn and caches its return value"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Child is wrapped in React.memo. Why does it still re-render whenever Parent re-renders?\n\nfunction Parent() {\n  const [n, setN] = useState(0);\n  return <Child onSelect={() => console.log(\"hi\")} />;\n}",
+    "options": [
+     "React.memo only works for class components",
+     "Components that receive functions as props are always re-rendered by design",
+     "A new arrow function is created on each render, so the onSelect prop is never shallowly equal",
+     "React.memo compares props deeply, and functions can never be compared"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Why must hooks not be called inside conditions or loops?",
+    "options": [
+     "Hooks are asynchronous and conditions would block them",
+     "Hooks inside loops can only be used with class components",
+     "Conditions inside a component are not allowed by JSX",
+     "React matches hooks to their state by call order, which must be the same on every render"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "ComponentA and ComponentB each call the same custom hook useCounter(), which uses useState inside. Do they share the counter state?",
+    "options": [
+     "No, each call to the hook gets its own independent state",
+     "Yes, custom hooks share state among all components that use them",
+     "Yes, but only if the components are siblings",
+     "No, custom hooks cannot contain useState"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "A provider is written as <UserContext.Provider value={{ user, setUser }}>. What is the consequence?",
+    "options": [
+     "React throws an error because value must be a primitive",
+     "Consumers never re-render, because object values are compared deeply",
+     "A new object is created on every render of the provider, so every consumer re-renders whenever the provider re-renders",
+     "Only the first consumer in the tree receives the value"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does the displayed count do over time?\n\nconst [count, setCount] = useState(0);\nuseEffect(() => {\n  const id = setInterval(() => setCount(count + 1), 1000);\n  return () => clearInterval(id);\n}, []);",
+    "options": [
+     "It increases by 2 every second because of double rendering",
+     "It stays at 0 forever",
+     "It goes from 0 to 1 and then stays at 1",
+     "It increases by 1 every second"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "On re-render, a component's root changes from <div><Counter /></div> to <section><Counter /></section>. What happens to Counter's state?",
+    "options": [
+     "React throws an error about changing element types",
+     "It is lost: the old subtree is unmounted and a new one is mounted because the element type changed",
+     "It is copied over to the new Counter automatically",
+     "It is preserved because Counter is still in the same position"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What happens when the key changes in <Profile key={userId} /> from 1 to 2?",
+    "options": [
+     "Only Profile's effects re-run; its state is kept",
+     "Profile re-renders but keeps all of its state",
+     "React logs a warning and ignores the new key",
+     "React unmounts the old Profile and mounts a fresh one, resetting its state"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the role of <Suspense fallback={<Spinner />}> around a component created with React.lazy()?",
+    "options": [
+     "It shows the fallback while the lazy component's code is loading",
+     "It catches JavaScript errors thrown while rendering",
+     "It delays rendering until the user scrolls to the component",
+     "It retries the import forever if the network fails"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "How does useLayoutEffect differ from useEffect?",
+    "options": [
+     "It runs synchronously after DOM updates but before the browser paints",
+     "It runs before the component renders for the first time",
+     "It runs in a web worker so it never blocks the main thread",
+     "It only runs on the server during server-side rendering"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "A component receives firstName and lastName as props and needs to show the full name. What is the recommended approach?",
+    "options": [
+     "Use useLayoutEffect to write it into the DOM directly",
+     "Store it in state and sync it with a useEffect when the props change",
+     "Store it in a ref and update it in an event handler",
+     "Compute it during render: const fullName = firstName + \" \" + lastName;"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is user.age after this update re-renders?\n\nconst [user, setUser] = useState({ name: \"Al\", age: 30 });\n// later:\nsetUser({ name: \"Bo\" });",
+    "options": [
+     "30, because useState merges objects like class setState",
+     "undefined, because the setter replaces the state object instead of merging it",
+     "React throws an error about the missing age field",
+     "null"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which is characteristic of an uncontrolled input?",
+    "options": [
+     "React state holds the value and every keystroke calls a setter",
+     "The DOM keeps the value; you set an initial defaultValue and read the value with a ref when needed",
+     "It must use the value prop without an onChange handler",
+     "The input cannot be submitted as part of a form"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "How often does this effect run?\n\nfunction Search() {\n  const options = { limit: 10 };\n  useEffect(() => {\n    fetchResults(options);\n  }, [options]);\n  // ...\n}",
+    "options": [
+     "After every render, because options is a new object each render",
+     "Never, because objects are not allowed in the dependency array",
+     "Only once, because options never changes its contents",
+     "Only when the limit value changes"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "In React Router, why use <Link to=\"/about\"> instead of <a href=\"/about\"> for internal navigation?",
+    "options": [
+     "Link changes the URL and renders the new route on the client without a full page reload",
+     "<a> elements are not allowed inside React components",
+     "Link is required for search engines to index the page",
+     "Link prefetches every page of the app on startup"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "A route is defined with path \"/users/:id\". On the URL /users/42, what does useParams() return?",
+    "options": [
+     "[\"42\"]",
+     "{ id: 42 }",
+     "\"42\"",
+     "{ id: \"42\" }"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does \"prop drilling\" refer to?",
+    "options": [
+     "Passing too many props to a single component",
+     "Passing props through intermediate components that do not use them, just to reach a deeply nested child",
+     "Mutating props inside a child component",
+     "Reading props from the DOM with refs"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "In a class component, which lifecycle method is closest to the cleanup function returned from useEffect(..., [])?",
+    "options": [
+     "render",
+     "getDerivedStateFromProps",
+     "componentWillUnmount",
+     "componentDidMount"
+    ],
+    "answer": "C"
+   }
+  ]
+ }
+]

@@ -1,0 +1,1658 @@
+[
+ {
+  "title": "HTML MCQs - Part 1: Fundamentals",
+  "description": "Warm up with the building blocks of every web page: document structure, links, images, lists, tables and forms.",
+  "category": "HTML",
+  "questions": [
+   {
+    "q": "What does <!DOCTYPE html> at the top of a page do?",
+    "options": [
+     "Declares the character encoding of the document",
+     "Tells the browser to render the page in standards mode as an HTML5 document",
+     "Creates the <html> root element automatically",
+     "Downloads the HTML DTD so the page can be validated"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which element contains the visible content of a web page?",
+    "options": [
+     "<head>",
+     "<title>",
+     "<meta>",
+     "<body>"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which is the correct way to declare UTF-8 encoding in an HTML5 document?",
+    "options": [
+     "<meta encoding=\"UTF-8\">",
+     "<html encoding=\"UTF-8\">",
+     "<charset>UTF-8</charset>",
+     "<meta charset=\"UTF-8\">"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which heading element represents the highest-level (most important) heading?",
+    "options": [
+     "<head>",
+     "<h1>",
+     "<header>",
+     "<h6>"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is the main purpose of the alt attribute on an <img>?",
+    "options": [
+     "It controls the image's alignment within the text",
+     "It provides a text alternative for screen readers and for when the image cannot be shown",
+     "It compresses the image for faster loading",
+     "It sets a backup image URL to load if the first one fails"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does target=\"_blank\" do in this link?\n\n<a href=\"https://example.com\" target=\"_blank\">Docs</a>",
+    "options": [
+     "Opens the link in the same tab",
+     "Downloads the linked page instead of displaying it",
+     "Opens the link in a new tab or window",
+     "Prevents the link from being followed"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which element creates a numbered (ordered) list?",
+    "options": [
+     "<ul>",
+     "<ol>",
+     "<li>",
+     "<dl>"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which numbers are displayed for this list?\n\n<ol start=\"3\" reversed>\n  <li>A</li>\n  <li>B</li>\n  <li>C</li>\n</ol>",
+    "options": [
+     "3, 4, 5",
+     "3, 2, 1",
+     "1, 2, 3",
+     "5, 4, 3"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which input type shows a native date picker in modern browsers?",
+    "options": [
+     "<input type=\"day\">",
+     "<input type=\"calendar\">",
+     "<input type=\"date\">",
+     "<input type=\"datepicker\">"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Why should you connect <label for=\"email\"> to <input id=\"email\">?",
+    "options": [
+     "Clicking the label focuses the input, and screen readers announce the label for the input",
+     "It sends the label text to the server along with the value",
+     "It automatically validates the input as an email address",
+     "It makes the input a required field"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which attribute prevents a form from submitting while a field is empty?",
+    "options": [
+     "mandatory",
+     "notempty",
+     "validate",
+     "required"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which of these elements is inline (not block-level) by default?",
+    "options": [
+     "<section>",
+     "<div>",
+     "<span>",
+     "<p>"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this tag do?\n\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+    "options": [
+     "Makes the layout viewport match the device width so the page is not rendered as a zoomed-out desktop page on phones",
+     "Loads a separate mobile stylesheet",
+     "Sets the minimum size of the browser window on desktop",
+     "Disables zooming on every device"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which semantic element best represents a self-contained piece of content, such as a blog post or news story?",
+    "options": [
+     "<nav>",
+     "<div>",
+     "<article>",
+     "<aside>"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which element defines a header cell inside a table row?",
+    "options": [
+     "<th>",
+     "<td>",
+     "<thead>",
+     "<header>"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which attribute makes a <td> span across two columns?",
+    "options": [
+     "merge=\"2\"",
+     "span=\"2\"",
+     "colspan=\"2\"",
+     "rowspan=\"2\""
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Given the element below, how do you read the value \"42\" in JavaScript?\n\n<div id=\"card\" data-user-id=\"42\"></div>",
+    "options": [
+     "card.dataset.userId",
+     "card.data.userId",
+     "card.getData(\"userId\")",
+     "card.dataset.user-id"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which of these is NOT a valid HTML input type?",
+    "options": [
+     "color",
+     "range",
+     "email",
+     "slider"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "A <button> is placed inside a <form> without a type attribute. What is its default type?",
+    "options": [
+     "submit",
+     "reset",
+     "none",
+     "button"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which is the correct syntax for a comment in HTML?",
+    "options": [
+     "// This is a comment",
+     "/* This is a comment */",
+     "<# This is a comment #>",
+     "<!-- This is a comment -->"
+    ],
+    "answer": "D"
+   }
+  ]
+ },
+ {
+  "title": "HTML MCQs - Part 2: Advanced",
+  "description": "Go deeper into script loading, accessibility and ARIA, responsive images, form validation and parser quirks.",
+  "category": "HTML",
+  "questions": [
+   {
+    "q": "What is true about a classic script loaded with the defer attribute?\n\n<script src=\"app.js\" defer></script>",
+    "options": [
+     "It downloads in parallel and runs after the document is parsed, in document order, before DOMContentLoaded",
+     "It blocks HTML parsing until it has downloaded and run",
+     "It runs only after the window load event, once all images have loaded",
+     "It runs as soon as it finishes downloading, possibly before parsing is done"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Two scripts both use the async attribute. Which statement is true?",
+    "options": [
+     "They always execute in the order they appear in the document",
+     "They may execute in either order, depending on which finishes downloading first",
+     "They wait until DOMContentLoaded before executing",
+     "They never pause the HTML parser, even while executing"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "How does a <script type=\"module\"> behave by default?",
+    "options": [
+     "It runs in sloppy (non-strict) mode unless \"use strict\" is added",
+     "It is deferred by default, so it does not block parsing and runs after the document is parsed",
+     "It blocks parsing exactly like a classic script without attributes",
+     "It cannot use import statements unless async is also set"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Following the first rule of ARIA, what should you do instead of adding role=\"button\" to a clickable <div>?",
+    "options": [
+     "Wrap the <div> in an <a> element without an href",
+     "Add aria-hidden=\"true\" to the <div>",
+     "Add tabindex=\"-1\" to the <div>",
+     "Use a native <button> element, which already has the role, focus and keyboard behavior"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does aria-hidden=\"true\" do to an element?",
+    "options": [
+     "Removes it and its descendants from the accessibility tree while it stays visible on screen",
+     "Prevents search engines from indexing its content",
+     "Hides it visually, exactly like display: none",
+     "Disables all mouse and keyboard events on it"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does tabindex=\"-1\" do on an element?",
+    "options": [
+     "Makes it focusable from script (element.focus()) but removes it from the sequential Tab order",
+     "Moves it to the very first position in the Tab order",
+     "Disables the element and any form value it has",
+     "Moves it to the very last position in the Tab order"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What is the effect of an empty sandbox attribute on an iframe?\n\n<iframe src=\"widget.html\" sandbox></iframe>",
+    "options": [
+     "It only forces the iframe to be loaded over HTTPS",
+     "It only prevents the iframe from navigating the top-level page",
+     "All restrictions are lifted, giving the iframe full access",
+     "All sandbox restrictions apply, e.g. scripts, form submission and popups are blocked"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the purpose of rel=\"noopener\" on a link that opens a new tab?",
+    "options": [
+     "It prevents the opened page from accessing the original page through window.opener",
+     "It forces the link to open in the same tab",
+     "It tells search engines not to follow the link",
+     "It preloads the linked page in the background"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which attribute on a <form> element disables the browser's built-in constraint validation when the form is submitted?",
+    "options": [
+     "skipvalidation",
+     "noverify",
+     "validate=\"false\"",
+     "novalidate"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which value satisfies the following input's pattern (pattern must match the entire value)?\n\n<input pattern=\"[0-9]{3}\">",
+    "options": [
+     "12a",
+     "0123",
+     "123",
+     "1234"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "How do disabled and readonly differ for a text input inside a form?",
+    "options": [
+     "Neither value is submitted with the form",
+     "A disabled field's value is submitted with the form; a readonly field's value is not",
+     "A readonly field's value is submitted with the form; a disabled field's value is not",
+     "Both values are submitted, and both fields can be edited by the user"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does the w descriptor mean in this srcset?\n\n<img src=\"small.jpg\"\n     srcset=\"small.jpg 800w, large.jpg 1600w\"\n     sizes=\"(max-width: 600px) 100vw, 50vw\" alt=\"\">",
+    "options": [
+     "The file size of each image in kilobytes",
+     "The intrinsic width of each image file in pixels",
+     "The maximum viewport width at which the image may be used",
+     "The width at which the image will be displayed in CSS pixels"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does loading=\"lazy\" on an <img> do?",
+    "options": [
+     "Loads a lower-quality version of the image first",
+     "Loads the image only after all scripts have run",
+     "Prevents the image from being cached",
+     "Defers loading the image until it is near the viewport"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which method opens a <dialog> element as a modal, with a ::backdrop and the rest of the page made inert?",
+    "options": [
+     "dialog.open()",
+     "dialog.openModal()",
+     "dialog.show()",
+     "dialog.showModal()"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which pair of elements creates a native expand/collapse widget without any JavaScript?",
+    "options": [
+     "<dialog> and <legend>",
+     "<fieldset> and <legend>",
+     "<details> and <summary>",
+     "<section> and <header>"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "How does a browser parse this markup?\n\n<p>Hello <div>World</div></p>",
+    "options": [
+     "The browser stops rendering and shows a parse error",
+     "The <p> is closed automatically before the <div>, and the stray </p> creates an extra empty <p></p>",
+     "The <div> is converted into a <span> to keep it inside the <p>",
+     "The <div> is nested inside the <p> exactly as written"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "For <video autoplay> to reliably start playing automatically in modern browsers, which attribute is usually also needed?",
+    "options": [
+     "muted",
+     "preload=\"auto\"",
+     "loop",
+     "controls"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does <link rel=\"preload\" href=\"font.woff2\" as=\"font\" crossorigin> do?",
+    "options": [
+     "Executes the resource before any other script on the page",
+     "Fetches a resource at low priority for a likely future navigation",
+     "Tells the browser to fetch a resource early because the current page will need it soon",
+     "Only resolves DNS and opens a connection to another origin"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "An unchecked checkbox <input type=\"checkbox\" name=\"terms\" value=\"yes\"> is in a submitted form. What is sent for it?",
+    "options": [
+     "terms=off",
+     "terms= (an empty value)",
+     "Nothing; unchecked checkboxes are not included in the form data",
+     "terms=no"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "How many <main> elements may be visible in a document at the same time?",
+    "options": [
+     "Any number, as long as each has an id",
+     "At most one; any additional <main> elements must be hidden",
+     "One per <article>",
+     "Exactly two: one for content and one for the sidebar"
+    ],
+    "answer": "B"
+   }
+  ]
+ },
+ {
+  "title": "CSS MCQs - Part 1: Fundamentals",
+  "description": "Check your grip on selectors, the cascade, the box model, units, positioning and the basics of flexbox and grid.",
+  "category": "CSS",
+  "questions": [
+   {
+    "q": "Which selector has the highest specificity?",
+    "options": [
+     "#nav .item",
+     "ul li a",
+     ".a.b.c",
+     ".nav .item a"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What color is the paragraph text?\n\np { color: red; }\np { color: blue; }",
+    "options": [
+     "purple",
+     "red",
+     "The browser default color",
+     "blue"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the total rendered width of the box (default box-sizing)?\n\n.box {\n  width: 200px;\n  padding: 20px;\n  border: 5px solid black;\n}",
+    "options": [
+     "200px",
+     "250px",
+     "245px",
+     "240px"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What color is the text of this paragraph?\n\n/* CSS */\n.a { color: red; }\n#b { color: blue; }\n\n<!-- HTML -->\n<p id=\"b\" class=\"a\" style=\"color: green\">Hi</p>",
+    "options": [
+     "red",
+     "blue",
+     "green",
+     "black"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What is 1rem relative to?",
+    "options": [
+     "The font-size of the root (<html>) element",
+     "The element's own line-height",
+     "1% of the viewport width",
+     "The font-size of the parent element"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which of these properties is inherited by default?",
+    "options": [
+     "color",
+     "margin",
+     "border",
+     "background-color"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "On a non-replaced inline element such as <span>, which property has no effect?",
+    "options": [
+     "padding-left",
+     "color",
+     "width",
+     "font-size"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "An element with position: absolute is positioned relative to what?",
+    "options": [
+     "Always the <body> element",
+     "Always the browser viewport",
+     "Its nearest ancestor whose position is not static",
+     "Always its direct parent element"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "When no ancestor has a transform, filter or similar property, an element with position: fixed is positioned relative to what?",
+    "options": [
+     "The <html> element's content box",
+     "The viewport",
+     "Its parent element",
+     "Its original place in the normal flow"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "In a flex container with flex-direction: row, which declaration centers the items horizontally?",
+    "options": [
+     "text-align: center",
+     "align-items: center",
+     "align-content: center",
+     "justify-content: center"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which of these is a pseudo-element?",
+    "options": [
+     ":hover",
+     "::before",
+     ":focus",
+     ":first-child"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "When does the rule inside @media (max-width: 600px) { ... } apply?",
+    "options": [
+     "Only when the viewport is exactly 600px wide",
+     "When the viewport is wider than 600px",
+     "When the viewport is 600px wide or narrower",
+     "Only when the physical screen is 600 device pixels wide"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which declaration horizontally centers a block element that has a fixed width?",
+    "options": [
+     "text-align: center;",
+     "align: center;",
+     "margin: 0 auto;",
+     "float: center;"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Given :root { --main-color: #333; }, which declaration correctly uses the custom property?",
+    "options": [
+     "color: --main-color();",
+     "color: var(--main-color);",
+     "color: @main-color;",
+     "color: $main-color;"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does grid-template-columns: repeat(3, 1fr); create?",
+    "options": [
+     "Three columns that are each 1 pixel wide",
+     "One column that is three times wider than normal",
+     "Three rows of equal height",
+     "Three columns that share the available space equally"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "A 600px-wide flex container (no gap, padding or borders) holds three children, each with flex: 1 and a short word of text. How wide is each child?",
+    "options": [
+     "100px",
+     "As wide as its text content",
+     "600px",
+     "200px"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which declaration hides an element but still keeps its space in the layout?",
+    "options": [
+     "visibility: hidden;",
+     "position: static;",
+     "overflow: hidden;",
+     "display: none;"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does this declaration do?\n\n.btn { transition: background-color 0.3s ease; }",
+    "options": [
+     "Changes the background color only while the element is hovered",
+     "Delays every background-color change by 0.3 seconds, then switches instantly",
+     "Plays a background-color animation in an infinite loop",
+     "Animates any change to background-color over 0.3 seconds"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does overflow: auto do?",
+    "options": [
+     "Grows the box so that all content fits",
+     "Shows scrollbars only when the content overflows the box",
+     "Clips the overflowing content with no way to scroll",
+     "Always shows both scrollbars, even if nothing overflows"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which elements does the selector div > p match?",
+    "options": [
+     "<p> elements that are direct children of a <div>",
+     "All <p> siblings that come after a <div>",
+     "All <p> elements anywhere inside a <div>",
+     "The <p> immediately following a <div> as a sibling"
+    ],
+    "answer": "A"
+   }
+  ]
+ },
+ {
+  "title": "CSS MCQs - Part 2: Advanced",
+  "description": "Interview-level CSS: specificity edge cases, stacking contexts, margin collapsing, clamp(), :has(), container queries and cascade layers.",
+  "category": "CSS",
+  "questions": [
+   {
+    "q": "What is the specificity of this selector (written as IDs, classes, types)?\n\n:where(#main) .card p",
+    "options": [
+     "0,0,1",
+     "0,1,1",
+     "1,1,1",
+     "1,0,1"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What color is the paragraph text?\n\n/* CSS */\n.note { color: red !important; }\n#intro { color: blue; }\n\n<!-- HTML -->\n<p id=\"intro\" class=\"note\">Hello</p>",
+    "options": [
+     "black",
+     "blue",
+     "red",
+     "purple"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "A child element has z-index: 9999 but still appears behind a sibling of its parent. What is the most likely reason?",
+    "options": [
+     "z-index only works on elements with display: block",
+     "The parent creates a stacking context that is layered below that sibling, and the child cannot escape it",
+     "z-index values above 999 are ignored by browsers",
+     "The child also needs float: left for z-index to apply"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which of these does NOT create a new stacking context?",
+    "options": [
+     "isolation: isolate",
+     "opacity: 0.9",
+     "position: relative with z-index: auto",
+     "transform: translateX(0)"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which is a common reason why position: sticky; top: 0; fails to stick while scrolling the page?",
+    "options": [
+     "The page uses rem units for font sizes",
+     "The element has display: block",
+     "An ancestor has overflow: hidden or auto, creating a different scroll container",
+     "The element has a background-color"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Two block-level siblings sit in normal flow. The first has margin-bottom: 30px, the second has margin-top: 20px. What is the vertical gap between them?",
+    "options": [
+     "10px",
+     "20px",
+     "50px",
+     "30px"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "The same two boxes (margin-bottom: 30px and margin-top: 20px) are now items in a display: flex; flex-direction: column; container. What is the gap between them?",
+    "options": [
+     "50px",
+     "0px",
+     "30px",
+     "20px"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "With a viewport width of 1000px and a root font-size of 16px, what font-size does this produce?\n\nh1 { font-size: clamp(1rem, 2.5vw, 2rem); }",
+    "options": [
+     "25px",
+     "32px",
+     "16px",
+     "40px"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does the selector li:has(> a.active) match?",
+    "options": [
+     "<a class=\"active\"> elements inside an <li>",
+     "<li> elements that have a direct child <a> with class active",
+     "<li> elements that themselves have the class active",
+     "<li> elements that do not contain an active link"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "In grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)), how does auto-fit differ from auto-fill?",
+    "options": [
+     "There is no difference; they are aliases",
+     "auto-fit collapses empty tracks so the existing items stretch to fill the row; auto-fill keeps the empty tracks",
+     "auto-fit creates rows while auto-fill creates columns",
+     "auto-fit keeps empty tracks; auto-fill collapses them"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does grid-column: 1 / -1; do for a grid item?",
+    "options": [
+     "Makes it span from the first to the last line of the explicit grid (the full width)",
+     "Places it in the last column, in reverse order",
+     "Places it only in the first column",
+     "Hides the item because -1 is an invalid line"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does the shorthand flex: 1 expand to?",
+    "options": [
+     "flex-grow: 1; flex-shrink: 0; flex-basis: auto",
+     "flex-grow: 0; flex-shrink: 1; flex-basis: auto",
+     "flex-grow: 1; flex-shrink: 1; flex-basis: 0%",
+     "flex-grow: 1; flex-shrink: 1; flex-basis: auto"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "The root font-size is 16px. What is the computed font-size of .child?\n\n.parent { font-size: 1.5em; }\n.child  { font-size: 1.5em; }\n\n<div class=\"parent\"><p class=\"child\">Text</p></div>",
+    "options": [
+     "27px",
+     "24px",
+     "32px",
+     "36px"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does the keyword unset do when used as a property value?",
+    "options": [
+     "Acts like inherit for inherited properties and like initial for non-inherited properties",
+     "Always acts like inherit, whatever the property",
+     "Removes the property so that the next matching rule in the file applies",
+     "Always resets the property to the browser's user-agent stylesheet value"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Before @container (min-width: 400px) can respond to an ancestor's size, what must that ancestor declare?",
+    "options": [
+     "container-type: inline-size (or size)",
+     "contain: paint",
+     "display: container",
+     "position: relative"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "A ::before pseudo-element has width, height and a background set, but nothing appears. Which property is most likely missing?",
+    "options": [
+     "position: absolute",
+     "display: block",
+     "content (even content: \"\")",
+     "z-index"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does animation-fill-mode: forwards do?",
+    "options": [
+     "Applies the first keyframe styles during the animation-delay only",
+     "Makes the animation repeat forever",
+     "Plays the animation from the last keyframe to the first",
+     "Keeps the styles from the final keyframe applied after the animation ends"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which properties are generally cheapest for the browser to animate smoothly?",
+    "options": [
+     "top and left",
+     "margin and padding",
+     "width and height",
+     "transform and opacity"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "In a horizontal writing mode, a percentage value for padding-top is calculated relative to what?",
+    "options": [
+     "The element's font-size",
+     "The width of the containing block",
+     "The height of the containing block",
+     "The element's own height"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What color is the heading text?\n\n@layer reset {\n  #title { color: red; }\n}\nh1 { color: blue; }\n\n<h1 id=\"title\">Hi</h1>",
+    "options": [
+     "red",
+     "black",
+     "The browser default color",
+     "blue"
+    ],
+    "answer": "D"
+   }
+  ]
+ },
+ {
+  "title": "JavaScript MCQs - Part 1: Fundamentals",
+  "description": "Test the essentials: variables and hoisting, types and coercion, array methods, destructuring, spread and basic async.",
+  "category": "JavaScript",
+  "questions": [
+   {
+    "q": "What does this code log?\n\nconsole.log(typeof null);",
+    "options": [
+     "\"undefined\"",
+     "\"number\"",
+     "\"null\"",
+     "\"object\""
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does this code log?\n\nconsole.log(0.1 + 0.2 === 0.3);",
+    "options": [
+     "false",
+     "TypeError",
+     "NaN",
+     "true"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does this code log?\n\nconst arr = [1];\narr.push(2);\nconsole.log(arr);",
+    "options": [
+     "TypeError: Assignment to constant variable",
+     "SyntaxError",
+     "[1]",
+     "[1, 2]"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does this code log?\n\nconsole.log(x);\nvar x = 5;",
+    "options": [
+     "ReferenceError",
+     "null",
+     "5",
+     "undefined"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What happens when this code runs?\n\nconsole.log(y);\nlet y = 5;",
+    "options": [
+     "It logs null",
+     "ReferenceError, because y is in the temporal dead zone",
+     "It logs undefined",
+     "It logs 5"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does this code log?\n\nconsole.log(\"5\" + 3, \"5\" - 3);",
+    "options": [
+     "53 2",
+     "8 8",
+     "8 2",
+     "53 NaN"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Which of these expressions evaluates to true?",
+    "options": [
+     "\"0\" === 0",
+     "null == undefined",
+     "null === undefined",
+     "NaN == NaN"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which of these values is truthy?",
+    "options": [
+     "\"\" (empty string)",
+     "null",
+     "\"0\" (the string zero)",
+     "0"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does [1, 2, 3].map(x => x * 2) return?",
+    "options": [
+     "[1, 2, 3]",
+     "12",
+     "[2, 4, 6]",
+     "undefined"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does [1, 2, 3, 4].filter(n => n % 2 === 0) return?",
+    "options": [
+     "[2, 4]",
+     "[1, 3]",
+     "2",
+     "[false, true, false, true]"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does [1, 2, 3, 4].reduce((acc, n) => acc + n, 0) return?",
+    "options": [
+     "0",
+     "10",
+     "\"1234\"",
+     "[1, 3, 6, 10]"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does this code log?\n\nconst make = () => { a: 1 };\nconsole.log(make());",
+    "options": [
+     "{ a: 1 }",
+     "1",
+     "undefined",
+     "SyntaxError"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this code log?\n\nconst { a = 10, b = 20 } = { a: 1, b: undefined };\nconsole.log(a, b);",
+    "options": [
+     "1 undefined",
+     "10 undefined",
+     "1 20",
+     "10 20"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this code log?\n\nconst a = [1, 2];\nconst b = [...a, 3];\na.push(9);\nconsole.log(b);",
+    "options": [
+     "[1, 2, 9, 3]",
+     "[1, 2, 3, 9]",
+     "[1, 2]",
+     "[1, 2, 3]"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does this code log?\n\nconst user = {};\nconsole.log(user.profile?.name);",
+    "options": [
+     "undefined",
+     "\"\" (empty string)",
+     "TypeError: Cannot read properties of undefined",
+     "null"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does this code log?\n\nconsole.log(0 ?? 5, 0 || 5);",
+    "options": [
+     "5 0",
+     "0 0",
+     "0 5",
+     "5 5"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this code log?\n\nconst a = { x: 1 };\nconst b = a;\nb.x = 2;\nconsole.log(a.x);",
+    "options": [
+     "2",
+     "undefined",
+     "TypeError",
+     "1"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does JSON.stringify({ a: undefined, b: 1 }) return?",
+    "options": [
+     "'{a:undefined,b:1}'",
+     "'{\"b\":1}'",
+     "'{\"a\":undefined,\"b\":1}'",
+     "'{\"a\":null,\"b\":1}'"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does calling event.preventDefault() inside a form's submit handler do?",
+    "options": [
+     "Removes the submit listener from the form",
+     "Stops the event from bubbling to ancestor elements",
+     "Prevents other listeners on the same form from running",
+     "Stops the browser's default action, so the form is not submitted and the page does not reload"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "In what order are the numbers logged?\n\nconsole.log(1);\nsetTimeout(() => console.log(2), 0);\nconsole.log(3);",
+    "options": [
+     "3 1 2",
+     "1 3 2",
+     "2 1 3",
+     "1 2 3"
+    ],
+    "answer": "B"
+   }
+  ]
+ },
+ {
+  "title": "JavaScript MCQs - Part 2: Advanced",
+  "description": "Tackle the event loop, closures, this binding, prototypes, promises and DOM event propagation, with plenty of output-prediction puzzles.",
+  "category": "JavaScript",
+  "questions": [
+   {
+    "q": "In what order are the letters logged?\n\nconsole.log(\"A\");\nsetTimeout(() => console.log(\"B\"), 0);\nPromise.resolve().then(() => console.log(\"C\"));\nconsole.log(\"D\");",
+    "options": [
+     "A D B C",
+     "A D C B",
+     "A C D B",
+     "A B C D"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "In what order are the numbers logged?\n\nasync function f() {\n  console.log(1);\n  await null;\n  console.log(2);\n}\nf();\nconsole.log(3);",
+    "options": [
+     "1 2 3",
+     "3 1 2",
+     "1 3 2",
+     "3 2 1"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this code log?\n\nfor (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 0);\n}",
+    "options": [
+     "0 1 2",
+     "2 2 2",
+     "3 3 3",
+     "0 0 0"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this code log?\n\nfunction counter() {\n  let c = 0;\n  return () => ++c;\n}\nconst a = counter();\nconst b = counter();\na();\na();\nconsole.log(a(), b());",
+    "options": [
+     "3 4",
+     "2 1",
+     "1 1",
+     "3 1"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "In strict mode (for example inside an ES module), what happens here?\n\nconst obj = {\n  name: \"obj\",\n  greet() { return this.name; }\n};\nconst g = obj.greet;\nconsole.log(g());",
+    "options": [
+     "A TypeError is thrown, because this is undefined",
+     "It logs undefined",
+     "It logs \"obj\"",
+     "It logs \"greet\""
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Why are arrow functions convenient as callbacks inside object methods (e.g. in setTimeout)?",
+    "options": [
+     "They make this refer to the callback's caller, such as the timer",
+     "They create a new this for every call, preventing shared state",
+     "They do not have their own this; they use the this of the enclosing scope",
+     "They always bind this to the global object"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does this code log?\n\nfunction Person(name) { this.name = name; }\nPerson.prototype.hi = function () { return \"hi\"; };\nconst p = new Person(\"Al\");\nconsole.log(p.hasOwnProperty(\"hi\"), \"hi\" in p);",
+    "options": [
+     "true true",
+     "false true",
+     "false false",
+     "true false"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What happens with this code?\n\nclass A {\n  #x = 1;\n}\nconst a = new A();\nconsole.log(a.#x);",
+    "options": [
+     "It logs 1",
+     "A TypeError at runtime, but only when console.log runs",
+     "It logs undefined",
+     "A SyntaxError, because #x cannot be referenced outside the class body"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does this code log?\n\nconsole.log([10, 1, 5, 100].sort());",
+    "options": [
+     "[100, 10, 5, 1]",
+     "[1, 5, 10, 100]",
+     "[1, 10, 100, 5]",
+     "[10, 1, 5, 100]"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which Promise combinator waits for every promise to settle and never rejects because one of them rejected?",
+    "options": [
+     "Promise.all()",
+     "Promise.allSettled()",
+     "Promise.race()",
+     "Promise.any()"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What does this code log?\n\nPromise.resolve(1)\n  .then(x => x + 1)\n  .then(() => { throw new Error(\"boom\"); })\n  .catch(() => 10)\n  .then(x => console.log(x));",
+    "options": [
+     "10",
+     "Error: boom",
+     "2",
+     "undefined"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Event delegation (one listener on a parent handling clicks on many children) relies on which behavior?",
+    "options": [
+     "The event loop's microtask queue",
+     "Event bubbling",
+     "Function hoisting",
+     "Event capturing only"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "A click handler on an <a href=\"/next\"> calls event.stopPropagation() and nothing else. What happens on click?",
+    "options": [
+     "The click handler is removed after the first click",
+     "The browser does not follow the link, but ancestor listeners still run",
+     "Neither ancestor listeners run nor the link is followed",
+     "Ancestor click listeners do not run, but the browser still follows the link"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Clicking the child element produces which log order?\n\nparent.addEventListener(\"click\", () => console.log(\"parent\"), true);\nchild.addEventListener(\"click\", () => console.log(\"child\"));",
+    "options": [
+     "parent child",
+     "child",
+     "parent",
+     "child parent"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does this code log?\n\nconsole.log(NaN === NaN, Number.isNaN(NaN), isNaN(\"abc\"));",
+    "options": [
+     "false false true",
+     "false true false",
+     "true true true",
+     "false true true"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does this code log?\n\nconsole.log(1 < 2 < 3, 3 > 2 > 1);",
+    "options": [
+     "true false",
+     "false false",
+     "false true",
+     "true true"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What happens when this code runs?\n\nfoo();\nbar();\nfunction foo() { console.log(\"foo\"); }\nvar bar = function () { console.log(\"bar\"); };",
+    "options": [
+     "Logs \"foo\" then \"bar\"",
+     "Logs \"foo\", then throws ReferenceError: bar is not defined",
+     "Logs \"foo\", then throws TypeError: bar is not a function",
+     "Throws ReferenceError before logging anything"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "math.js contains export default function add(a, b) { return a + b; }. Which import works?",
+    "options": [
+     "import add from \"./math.js\";",
+     "import * as add from \"./math.js\"; add(1, 2);",
+     "import add() from \"./math.js\";",
+     "import { add } from \"./math.js\";"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What does this code log?\n\nconst a = { x: { y: 1 } };\nconst b = { ...a };\nb.x.y = 2;\nconsole.log(a.x.y);",
+    "options": [
+     "undefined",
+     "2",
+     "TypeError",
+     "1"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which statement about Object.freeze(obj) is true?",
+    "options": [
+     "It returns a frozen copy and leaves the original object mutable",
+     "It only prevents adding new properties; existing ones can still be changed",
+     "It deep-freezes every nested object automatically",
+     "It is shallow: objects nested inside obj can still be modified"
+    ],
+    "answer": "D"
+   }
+  ]
+ },
+ {
+  "title": "React MCQs - Part 1: Fundamentals",
+  "description": "Cover the React basics: JSX, props, useState, keys, useEffect, refs and controlled inputs.",
+  "category": "React",
+  "questions": [
+   {
+    "q": "What does JSX compile to?",
+    "options": [
+     "HTML strings that are inserted with innerHTML",
+     "Template literals that the browser parses at runtime",
+     "Function calls (such as jsx() or React.createElement()) that return plain objects describing the UI",
+     "Real DOM nodes created directly at compile time"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which prop sets an element's CSS class in JSX?",
+    "options": [
+     "cssClass",
+     "styleName",
+     "className",
+     "classList"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which statement about props is true?",
+    "options": [
+     "They are read-only inputs; a component should never modify its own props",
+     "Props must be declared with propTypes or they are ignored",
+     "A component can reassign its props to trigger a re-render",
+     "Props can only be strings"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "count starts at 0. What is count after one click?\n\nconst [count, setCount] = useState(0);\nfunction handleClick() {\n  setCount(count + 1);\n  setCount(count + 1);\n  setCount(count + 1);\n}",
+    "options": [
+     "3",
+     "0",
+     "2",
+     "1"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "count starts at 0. What is count after one click?\n\nconst [count, setCount] = useState(0);\nfunction handleClick() {\n  setCount(c => c + 1);\n  setCount(c => c + 1);\n  setCount(c => c + 1);\n}",
+    "options": [
+     "0",
+     "1",
+     "3",
+     "6"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Why does React need a key prop on items rendered from an array?",
+    "options": [
+     "To identify which items were added, removed or moved between renders",
+     "To apply unique CSS styles to each item",
+     "To make each item focusable with the keyboard",
+     "To sort the items alphabetically"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "What problem can using the array index as key cause?",
+    "options": [
+     "When items are inserted, removed or reordered, state and DOM can be matched to the wrong item",
+     "React throws an error and refuses to render the list",
+     "Each item re-mounts on every render even if nothing changed",
+     "The list renders in reverse order"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "Ignoring StrictMode's extra development checks, when does useEffect(() => { ... }, []) run its effect?",
+    "options": [
+     "After every render",
+     "Never, because the dependency array is empty",
+     "Before the first render",
+     "Once, after the component's first render"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "When does useEffect(() => { ... }) with no dependency array run its effect?",
+    "options": [
+     "Only when props change",
+     "After every render",
+     "Only after the first render",
+     "Only when the component unmounts"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "When does the cleanup function returned from a useEffect run?",
+    "options": [
+     "Only right before the very first render",
+     "Immediately after the effect function returns",
+     "Only when the browser tab is closed",
+     "Before the effect runs again with changed dependencies, and when the component unmounts"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "count is 0. What does this JSX render?\n\n<div>{count && <p>You have items</p>}</div>",
+    "options": [
+     "<p>You have items</p>",
+     "The character 0 inside the div",
+     "The text \"false\"",
+     "Nothing inside the div"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is the purpose of <>...</> (a Fragment)?",
+    "options": [
+     "To prevent the children from re-rendering",
+     "To lazy-load the enclosed components",
+     "To create a separate DOM tree outside the root",
+     "To group several children without adding an extra DOM element"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What happens with this input?\n\nconst [name, setName] = useState(\"\");\nreturn <input value={name} />;",
+    "options": [
+     "React throws an error and the component does not render",
+     "The field is effectively read-only and React warns that value was provided without onChange",
+     "The input ignores the value prop and behaves as uncontrolled",
+     "It works normally and name updates as the user types"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Two sibling components need to read and update the same piece of state. What is the standard React approach?",
+    "options": [
+     "Store the state in a global variable outside any component",
+     "Lift the state up to their closest common parent and pass it down via props",
+     "Have one sibling read the other's state through a ref",
+     "Keep a separate copy of the state in each sibling and sync them with useEffect"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What is wrong with this code?\n\n<button onClick={handleClick()}>Save</button>",
+    "options": [
+     "Event handler props must be strings in JSX",
+     "onClick must be written in lowercase as onclick",
+     "handleClick is called during rendering instead of when the button is clicked",
+     "Nothing; this is the recommended way to attach a handler"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which statement about useRef is true?",
+    "options": [
+     "Changing ref.current always triggers a re-render",
+     "useRef can only hold references to DOM elements",
+     "A ref's value is reset to its initial value on every render",
+     "Changing ref.current does not cause the component to re-render"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the problem with this update?\n\nconst [items, setItems] = useState([]);\nfunction add(x) {\n  items.push(x);\n  setItems(items);\n}",
+    "options": [
+     "setItems only accepts a function, not a value",
+     "The state array is mutated and the same reference is passed, so React may skip the re-render",
+     "Nothing; this is the recommended way to add items",
+     "push() is not allowed on arrays stored in state and throws an error"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Why does <myButton /> not render your myButton component?",
+    "options": [
+     "JSX treats lowercase tags as built-in DOM elements; component names must start with a capital letter",
+     "Components must be registered with React.register() first",
+     "Components must be wrapped in a Fragment to render",
+     "Self-closing tags are not allowed for components"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "How does the Card component access the <p> element passed in below?\n\n<Card>\n  <p>Hello</p>\n</Card>",
+    "options": [
+     "Through this.inner",
+     "Through useChildren()",
+     "Through props.children",
+     "Through props.content"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Which of these does NOT cause a function component to re-render?",
+    "options": [
+     "Changing a variable declared with let in the component body",
+     "Calling its state setter with a different value",
+     "A context value it reads with useContext changing",
+     "Its parent component re-rendering"
+    ],
+    "answer": "A"
+   }
+  ]
+ },
+ {
+  "title": "React MCQs - Part 2: Advanced",
+  "description": "Interview-level React: batching, memoization, rules of hooks, stale closures, reconciliation, Suspense and routing.",
+  "category": "React",
+  "questions": [
+   {
+    "q": "In development under <StrictMode>, why does an effect with an empty dependency array run, clean up, and run again on mount?",
+    "options": [
+     "Empty dependency arrays always run twice, in development and production",
+     "It is a bug in React 18 that was never fixed",
+     "React deliberately remounts once to help reveal effects that are missing a correct cleanup",
+     "StrictMode renders the component into two separate DOM trees"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "In React 18+, how many re-renders does this cause?\n\nsetTimeout(() => {\n  setA(1);\n  setB(2);\n}, 1000);",
+    "options": [
+     "Three, one for each setter plus a final commit",
+     "Two, because batching only happens inside React event handlers",
+     "Zero, because state cannot be updated inside a timeout",
+     "One, because updates are automatically batched even inside timeouts"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "Which statement about useCallback is true?",
+    "options": [
+     "useCallback prevents the component itself from re-rendering",
+     "useCallback(fn, deps) is equivalent to useMemo(() => fn, deps)",
+     "useCallback makes fn run in a background thread",
+     "useCallback calls fn and caches its return value"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Child is wrapped in React.memo. Why does it still re-render whenever Parent re-renders?\n\nfunction Parent() {\n  const [n, setN] = useState(0);\n  return <Child onSelect={() => console.log(\"hi\")} />;\n}",
+    "options": [
+     "React.memo only works for class components",
+     "Components that receive functions as props are always re-rendered by design",
+     "A new arrow function is created on each render, so the onSelect prop is never shallowly equal",
+     "React.memo compares props deeply, and functions can never be compared"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "Why must hooks not be called inside conditions or loops?",
+    "options": [
+     "Hooks are asynchronous and conditions would block them",
+     "Hooks inside loops can only be used with class components",
+     "Conditions inside a component are not allowed by JSX",
+     "React matches hooks to their state by call order, which must be the same on every render"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "ComponentA and ComponentB each call the same custom hook useCounter(), which uses useState inside. Do they share the counter state?",
+    "options": [
+     "No, each call to the hook gets its own independent state",
+     "Yes, custom hooks share state among all components that use them",
+     "Yes, but only if the components are siblings",
+     "No, custom hooks cannot contain useState"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "A provider is written as <UserContext.Provider value={{ user, setUser }}>. What is the consequence?",
+    "options": [
+     "React throws an error because value must be a primitive",
+     "Consumers never re-render, because object values are compared deeply",
+     "A new object is created on every render of the provider, so every consumer re-renders whenever the provider re-renders",
+     "Only the first consumer in the tree receives the value"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "What does the displayed count do over time?\n\nconst [count, setCount] = useState(0);\nuseEffect(() => {\n  const id = setInterval(() => setCount(count + 1), 1000);\n  return () => clearInterval(id);\n}, []);",
+    "options": [
+     "It increases by 2 every second because of double rendering",
+     "It stays at 0 forever",
+     "It goes from 0 to 1 and then stays at 1",
+     "It increases by 1 every second"
+    ],
+    "answer": "C"
+   },
+   {
+    "q": "On re-render, a component's root changes from <div><Counter /></div> to <section><Counter /></section>. What happens to Counter's state?",
+    "options": [
+     "React throws an error about changing element types",
+     "It is lost: the old subtree is unmounted and a new one is mounted because the element type changed",
+     "It is copied over to the new Counter automatically",
+     "It is preserved because Counter is still in the same position"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "What happens when the key changes in <Profile key={userId} /> from 1 to 2?",
+    "options": [
+     "Only Profile's effects re-run; its state is kept",
+     "Profile re-renders but keeps all of its state",
+     "React logs a warning and ignores the new key",
+     "React unmounts the old Profile and mounts a fresh one, resetting its state"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is the role of <Suspense fallback={<Spinner />}> around a component created with React.lazy()?",
+    "options": [
+     "It shows the fallback while the lazy component's code is loading",
+     "It catches JavaScript errors thrown while rendering",
+     "It delays rendering until the user scrolls to the component",
+     "It retries the import forever if the network fails"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "How does useLayoutEffect differ from useEffect?",
+    "options": [
+     "It runs synchronously after DOM updates but before the browser paints",
+     "It runs before the component renders for the first time",
+     "It runs in a web worker so it never blocks the main thread",
+     "It only runs on the server during server-side rendering"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "A component receives firstName and lastName as props and needs to show the full name. What is the recommended approach?",
+    "options": [
+     "Use useLayoutEffect to write it into the DOM directly",
+     "Store it in state and sync it with a useEffect when the props change",
+     "Store it in a ref and update it in an event handler",
+     "Compute it during render: const fullName = firstName + \" \" + lastName;"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What is user.age after this update re-renders?\n\nconst [user, setUser] = useState({ name: \"Al\", age: 30 });\n// later:\nsetUser({ name: \"Bo\" });",
+    "options": [
+     "30, because useState merges objects like class setState",
+     "undefined, because the setter replaces the state object instead of merging it",
+     "React throws an error about the missing age field",
+     "null"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "Which is characteristic of an uncontrolled input?",
+    "options": [
+     "React state holds the value and every keystroke calls a setter",
+     "The DOM keeps the value; you set an initial defaultValue and read the value with a ref when needed",
+     "It must use the value prop without an onChange handler",
+     "The input cannot be submitted as part of a form"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "How often does this effect run?\n\nfunction Search() {\n  const options = { limit: 10 };\n  useEffect(() => {\n    fetchResults(options);\n  }, [options]);\n  // ...\n}",
+    "options": [
+     "After every render, because options is a new object each render",
+     "Never, because objects are not allowed in the dependency array",
+     "Only once, because options never changes its contents",
+     "Only when the limit value changes"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "In React Router, why use <Link to=\"/about\"> instead of <a href=\"/about\"> for internal navigation?",
+    "options": [
+     "Link changes the URL and renders the new route on the client without a full page reload",
+     "<a> elements are not allowed inside React components",
+     "Link is required for search engines to index the page",
+     "Link prefetches every page of the app on startup"
+    ],
+    "answer": "A"
+   },
+   {
+    "q": "A route is defined with path \"/users/:id\". On the URL /users/42, what does useParams() return?",
+    "options": [
+     "[\"42\"]",
+     "{ id: 42 }",
+     "\"42\"",
+     "{ id: \"42\" }"
+    ],
+    "answer": "D"
+   },
+   {
+    "q": "What does \"prop drilling\" refer to?",
+    "options": [
+     "Passing too many props to a single component",
+     "Passing props through intermediate components that do not use them, just to reach a deeply nested child",
+     "Mutating props inside a child component",
+     "Reading props from the DOM with refs"
+    ],
+    "answer": "B"
+   },
+   {
+    "q": "In a class component, which lifecycle method is closest to the cleanup function returned from useEffect(..., [])?",
+    "options": [
+     "render",
+     "getDerivedStateFromProps",
+     "componentWillUnmount",
+     "componentDidMount"
+    ],
+    "answer": "C"
+   }
+  ]
+ }
+]
