@@ -5,6 +5,7 @@ import com.learnsstream.security.RateLimiter;
 import com.learnsstream.service.AuthService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -15,10 +16,13 @@ public class AuthController {
 
     private final AuthService authService;
     private final RateLimiter rateLimiter;
+    private final String clientIpHeader;
 
-    public AuthController(AuthService authService, RateLimiter rateLimiter) {
+    public AuthController(AuthService authService, RateLimiter rateLimiter,
+                          @Value("${learnstream.client-ip-header:}") String clientIpHeader) {
         this.authService = authService;
         this.rateLimiter = rateLimiter;
+        this.clientIpHeader = clientIpHeader.trim();
     }
 
     @PostMapping("/register")
@@ -64,14 +68,17 @@ public class AuthController {
     }
 
     /**
-     * Client IP for rate limiting. X-Forwarded-For is NOT read here because anyone can fake it;
-     * behind a trusted proxy set server.forward-headers-strategy=native and Tomcat fills getRemoteAddr() correctly.
+     * Client IP for rate limiting. Headers like X-Forwarded-For are NOT trusted by default because anyone can fake them.
+     * Behind a proxy that overwrites a known header (e.g. Cloudflare's CF-Connecting-IP on Render), set
+     * learnstream.client-ip-header to that header name.
      */
-    static String ip(HttpServletRequest request) {
-        // TEMP diagnostics (to be removed): which client-IP headers does the host send?
-        org.slf4j.LoggerFactory.getLogger(AuthController.class).info("IPDIAG remote={} xff={} tci={} cf={} xri={}",
-                request.getRemoteAddr(), request.getHeader("X-Forwarded-For"), request.getHeader("True-Client-IP"),
-                request.getHeader("CF-Connecting-IP"), request.getHeader("X-Real-IP"));
+    private String ip(HttpServletRequest request) {
+        if (!clientIpHeader.isBlank()) {
+            String value = request.getHeader(clientIpHeader);
+            if (value != null && !value.isBlank()) {
+                return value.trim();
+            }
+        }
         return request.getRemoteAddr();
     }
 }

@@ -36,6 +36,8 @@ services:
         sync: false
       - key: STRIPE_SECRET_KEY
         sync: false
+      - key: CLIENT_IP_HEADER
+        value: CF-Connecting-IP
       - key: SERVER_FORWARD_HEADERS_STRATEGY
         value: native
       - key: MAX_VIDEO_MB
