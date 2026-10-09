@@ -228,3 +228,6 @@ code, pre, kbd, .cm-editor { font-family: var(--font-code); font-size: 0.9em; fo
 .text-green { color: var(--green); }
 .text-red { color: var(--red) !important; }
 .text-amber { color: var(--amber); }
+
+/* Hide the "Powered by Netlify" badge Netlify injects on hosted pages */
+#nl-badge-frame, #nl-hud-frame { display: none !important; }
