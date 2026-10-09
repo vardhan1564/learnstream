@@ -1,0 +1,42 @@
+# Render Blueprint - deploys the Spring Boot backend on Render's free plan.
+# Render dashboard > New > Blueprint > pick this GitHub repo.
+# Values marked sync: false are asked for in the dashboard (never committed).
+services:
+  - type: web
+    name: learnstream-backend
+    runtime: docker
+    plan: free
+    rootDir: LearnStream-Backend
+    dockerfilePath: ./.Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/stats/public
+    autoDeploy: true
+    envVars:
+      - key: DB_URL
+        sync: false
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: MAIL_USERNAME
+        sync: false
+      - key: BREVO_API_KEY
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
+      - key: BACKEND_URL
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: SERVER_FORWARD_HEADERS_STRATEGY
+        value: native
+      - key: MAX_VIDEO_MB
+        value: "200"
